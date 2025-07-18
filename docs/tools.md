@@ -5,7 +5,30 @@ description: "Curated tools, libraries, and frameworks for building privacy-sens
 
 # Developer Tools for Privacy-Sensitive Applications
 
-Building applications that handle sensitive user data requires careful tool selection. These curated tools and services help developers implement privacy-by-design principles while maintaining functionality and user experience.
+If you're building applications that handle sensitive user data, these are the libraries, services, and frameworks we recommend across different categories. Our recommended privacy tools are primarily chosen based on their security guarantees and compliance capabilities, with additional emphasis on open-source solutions and developer-friendly APIs. They are applicable to a variety of development scenarios ranging from health apps that must comply with HIPAA to financial services navigating PCI-DSS requirements, but only you can determine what will work best for your specific use case. The wrong tool choice can result in regulatory violations costing millions in fines and irreparable damage to user trust—choose tools that protect both your users and your business.
+
+## Tool Categories
+
+### :material-chart-line: [Analytics & Monitoring](analytics-monitoring.md)
+Privacy-preserving analytics, crash reporting, and application monitoring tools that respect user privacy while providing essential insights.
+
+### :material-account-key: [Authentication & Identity](authentication-identity.md)
+Secure authentication systems and identity management solutions that minimize data collection while maintaining strong security.
+
+### :material-shield-lock: Data Protection & Encryption
+Client-side encryption libraries, database encryption, and data protection tools for securing sensitive information.
+
+### :material-message-processing: Communication
+Privacy-preserving messaging, real-time communication, and notification systems that protect user communications.
+
+### :material-test-tube: Testing & Validation
+Privacy auditing tools, security testing frameworks, and validation methods for privacy-sensitive applications.
+
+### :material-server: Infrastructure & Hosting
+Privacy-conscious hosting providers, content delivery networks, and infrastructure solutions that respect user data.
+
+### :material-gavel: Compliance & Legal
+Consent management platforms, data subject rights tools, and legal compliance solutions for privacy regulations.
 
 ## SDK & Library Selection
 

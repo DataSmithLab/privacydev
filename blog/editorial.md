@@ -83,7 +83,7 @@ Our contributors should always question the motives behind a source requesting a
 
 :   Always keep your promises, but clarify conditions attached to any promise made in exchange for information beforehand. You must not take information from an anonymous support without the approval of our editorial team. We only use unnamed sources to tell important stories that would otherwise go unreported.
 
-The decision to use an unnamed source is not a decision made solely by the writer. To use an unnamed source, a contributor must have the written consent of a member of our editorial team: [Daniel](author/dngray.md), [Freddy](author/freddy.md), [Jonah](author/jonah.md), or [Niek](author/niek-de-wilde.md).
+The decision to use an unnamed source is not a decision made solely by the writer. To use an unnamed source, a contributor must have the written consent of a member of our editorial team.
 
 Our editorial team will grant consent to the use of unnamed sources if the source is considered to be accurate and reliable, and if there is substantial justification for using the source's information without attribution. Privacy Guides should never be in the position of having to verify any factors within this policy after a story has been published.
 
