@@ -35,7 +35,21 @@ jobs:
           pip install -r requirements.txt || true
           pip install mkdocs mkdocs-material
 
-      # 3) 构建站点到 ./site
+      # 3) 设置 GitHub Pages 环境变量
+      - name: Set GitHub Pages environment variables
+        run: |
+          {
+            echo "BUILD_CONTEXT=production"
+            echo "BUILD_SITE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+            echo "BUILD_SITE_DIR=site"
+            echo "MAIN_SITE_BASE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+            echo "MAIN_SITE_ABOUT_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/about/"
+            echo "MAIN_SITE_RECOMMENDATIONS_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/tools/"
+            echo "MAIN_SITE_KNOWLEDGE_BASE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/basics/why-privacy-matters/"
+            echo "ARTICLES_SITE_BASE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/articles/"
+          } >> "$GITHUB_ENV"
+
+      # 4) 构建站点到 ./site
       - run: mkdocs build --clean --site-dir site
 
       # 4) 告诉 GitHub 这些文件将作为 Pages 资源

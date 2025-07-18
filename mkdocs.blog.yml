@@ -206,8 +206,6 @@ markdown_extensions:
 
 nav:
   - !ENV [NAV_HOME, "Home"]: !ENV [MAIN_SITE_BASE_URL, "/en/"]
-  - !ENV [NAV_KNOWLEDGE_BASE, "Knowledge Base"]:
-      !ENV [MAIN_SITE_KNOWLEDGE_BASE_URL, "/en/basics/why-privacy-matters/"]
   - !ENV [NAV_RECOMMENDATIONS, "Recommendations"]:
       !ENV [MAIN_SITE_RECOMMENDATIONS_URL, "/en/tools/"]
   - !ENV [NAV_BLOG, "Articles"]:
