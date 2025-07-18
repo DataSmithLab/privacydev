@@ -3,8 +3,6 @@ date:
     created: 2025-01-18T19:00:00Z
 categories:
     - Tutorials
-authors:
-    - privacy-dev
 tags:
     - Linux
     - Security
