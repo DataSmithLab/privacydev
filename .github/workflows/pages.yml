@@ -33,7 +33,7 @@ jobs:
           python -m pip install --upgrade pip
           # 如果你有 requirements.txt 就装它；否则这两行足够
           pip install -r requirements.txt || true
-          pip install mkdocs mkdocs-material
+          pip install mkdocs mkdocs-material mkdocs-rss-plugin mkdocs-glightbox
 
       # 3) 设置 GitHub Pages 环境变量
       - name: Set GitHub Pages environment variables
@@ -49,8 +49,11 @@ jobs:
             echo "ARTICLES_SITE_BASE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/articles/"
           } >> "$GITHUB_ENV"
 
-      # 4) 构建站点到 ./site
+      # 4) 构建主站点到 ./site
       - run: mkdocs build --clean --site-dir site
+      
+      # 5) 构建博客/文章到 ./site/articles
+      - run: mkdocs build --config-file mkdocs.blog.yml --site-dir site/articles
 
       # 4) 告诉 GitHub 这些文件将作为 Pages 资源
       - uses: actions/configure-pages@v4

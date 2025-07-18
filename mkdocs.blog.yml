@@ -19,10 +19,10 @@
 # IN THE SOFTWARE.
 
 docs_dir: "blog"
-site_url: "https://www.privacyguides.org/articles/"
+site_url: !ENV [ARTICLES_SITE_BASE_URL, "https://www.privacyguides.org/articles/"]
 site_dir: "site/articles"
 
-site_name: Privacy Guides
+site_name: Privacy Dev
 site_description: "Privacy Guides is the most popular & trustworthy non-profit privacy resource to find privacy tools and learn about protecting your digital life."
 edit_uri_template: blob/main/blog/{path}?plain=1
 

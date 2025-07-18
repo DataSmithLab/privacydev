@@ -22,7 +22,7 @@ docs_dir: !ENV [BUILD_DOCS_DIR, "docs"]
 site_url: !ENV [BUILD_SITE_URL, "https://www.privacyguides.org/en/"]
 site_dir: !ENV [BUILD_SITE_DIR, "site/en"]
 
-site_name: Privacy Guides
+site_name: Privacy Dev
 site_description:
   !ENV [
     SITE_DESCRIPTION,
