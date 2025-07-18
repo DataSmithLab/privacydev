@@ -62,9 +62,6 @@ extra:
     - icon: simple/matrix
       link: https://matrix.to/#/#privacyguides:matrix.org
       name: !ENV [SOCIAL_MATRIX, "Matrix"]
-    - icon: simple/discourse
-      link: https://discuss.privacyguides.net/
-      name: !ENV [SOCIAL_FORUM, "Forum"]
     - icon: simple/github
       link: https://github.com/privacyguides
       name: !ENV [SOCIAL_GITHUB, "GitHub"]
@@ -217,13 +214,6 @@ nav:
       - index.md
       - editorial.md
       - tags.md
-  - !ENV [NAV_VIDEOS, "Videos"]: !ENV [VIDEOS_SITE_BASE_URL, "/videos/"]
-  - !ENV [NAV_FORUM, "Forum"]: "https://discuss.privacyguides.net/"
-  - !ENV [NAV_WIKI, "Wiki"]:
-      !ENV [
-        NAV_WIKI_LINK,
-        "https://discuss.privacyguides.net/c/community-wiki/9411/none",
-      ]
   - !ENV [NAV_ABOUT, "About"]: !ENV [MAIN_SITE_ABOUT_URL, "/en/about/"]
 
 validation:

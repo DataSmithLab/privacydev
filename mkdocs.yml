@@ -105,9 +105,6 @@ extra:
               "We need you! Here's how to get involved:",
             ]
           links:
-            - icon: simple/discourse
-              name: !ENV [HOMEPAGE_CTA_FORUM_NAME, "Join the forum"]
-              link: https://discuss.privacyguides.net/
             - icon: simple/mastodon
               name: !ENV [HOMEPAGE_CTA_MASTODON_NAME, "Follow us on Mastodon"]
               link: https://mastodon.neat.computer/@privacyguides
@@ -140,16 +137,6 @@ extra:
             ]
         - title:
             !ENV [
-              HOMEPAGE_RSS_FORUM_TITLE,
-              "Latest Privacy Guides forum topics",
-            ]
-          link:
-            !ENV [
-              HOMEPAGE_RSS_FORUM_LINK,
-              "https://discuss.privacyguides.net/latest.rss",
-            ]
-        - title:
-            !ENV [
               HOMEPAGE_RSS_CHANGELOG_TITLE,
               "Privacy Guides release changelog",
             ]
@@ -173,9 +160,6 @@ extra:
     - icon: simple/matrix
       link: https://matrix.to/#/#privacyguides:matrix.org
       name: !ENV [SOCIAL_MATRIX, "Matrix"]
-    - icon: simple/discourse
-      link: https://discuss.privacyguides.net/
-      name: !ENV [SOCIAL_FORUM, "Forum"]
     - icon: simple/github
       link: https://github.com/privacyguides
       name: !ENV [SOCIAL_GITHUB, "GitHub"]
@@ -447,19 +431,9 @@ nav:
           - "alternative-networks.md"
           - "device-integrity.md"
   - !ENV [NAV_BLOG, "Articles"]: !ENV [ARTICLES_SITE_BASE_URL, "/articles/"]
-  - !ENV [NAV_VIDEOS, "Videos"]: !ENV [VIDEOS_SITE_BASE_URL, "/videos/"]
-  - !ENV [NAV_FORUM, "Forum"]:
-      !ENV [NAV_FORUM_LINK, "https://discuss.privacyguides.net/"]
-  - !ENV [NAV_WIKI, "Wiki"]:
-      !ENV [
-        NAV_WIKI_LINK,
-        "https://discuss.privacyguides.net/c/community-wiki/9411/none",
-      ]
   - !ENV [NAV_ABOUT, "About"]:
       - "about.md"
       - "about/donate.md"
-      - !ENV [NAV_ABOUT_TEAM_MEMBERS, "Team Members"]:
-          https://discuss.privacyguides.net/u?group=team&order=solutions&period=all
       - !ENV [NAV_ABOUT_POLICIES, "Policies"]:
           - "about/criteria.md"
           - "about/donation-acceptance-policy.md"
