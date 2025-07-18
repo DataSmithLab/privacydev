@@ -1,6 +1,7 @@
 ---
-authors:
-  - privacy-dev
+title: Privacy Dev Team
+name: Privacy Dev Team
+description: Experienced software engineers, security researchers, and privacy advocates passionate about helping developers build privacy-respecting applications.
 ---
 
 # Privacy Dev Team
