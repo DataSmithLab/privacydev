@@ -42,6 +42,7 @@ jobs:
             echo "BUILD_CONTEXT=production"
             echo "BUILD_SITE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
             echo "BUILD_SITE_DIR=site"
+            echo "BUILD_INSIDERS=false"
             echo "MAIN_SITE_BASE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
             echo "MAIN_SITE_ABOUT_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/about/"
             echo "MAIN_SITE_RECOMMENDATIONS_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/tools/"

@@ -346,6 +346,7 @@ nav:
   - !ENV [NAV_HOME, "Home"]: "index.md"
   - !ENV [NAV_RECOMMENDATIONS, "Recommendations"]:
       - "tools.md"
+      - "choosing-privacy-safe-sdks.md"
   - !ENV [NAV_BLOG, "Articles"]: !ENV [ARTICLES_SITE_BASE_URL, "/articles/"]
   - !ENV [NAV_ABOUT, "About"]:
       - "about.md"

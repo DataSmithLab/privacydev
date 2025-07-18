@@ -129,8 +129,6 @@ plugins:
     post_excerpt: required
     post_excerpt_max_authors: 0
     post_readtime: false
-    authors_profiles: true
-    authors_profiles_toc: true
     pagination_per_page: 20
     categories_allowed:
       - Announcements
@@ -156,7 +154,7 @@ plugins:
   offline:
     enabled: !ENV [BUILD_OFFLINE, false]
   group:
-    enabled: !ENV [BUILD_INSIDERS, true]
+    enabled: !ENV [BUILD_INSIDERS, false]
     plugins:
       macros: {}
       meta: {}
@@ -164,7 +162,7 @@ plugins:
         enabled: !ENV [OPTIMIZE, PRODUCTION, NETLIFY, false]
       typeset: {}
       social:
-        cards: !ENV [CARDS, true]
+        cards: !ENV [CARDS, false]
         cards_dir: assets/img/social
         cards_layout_dir: theme/layouts
         cards_layout: page
