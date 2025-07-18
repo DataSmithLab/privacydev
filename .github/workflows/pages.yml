@@ -1,0 +1,50 @@
+# .github/workflows/pages.yml
+name: Deploy MkDocs (open‑source) to GitHub Pages
+
+on:
+  push:
+    branches: [main]      # main 分支有任何提交就重新部署
+  workflow_dispatch:      # 也允许手动触发
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "github-pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) 拉主仓库代码；不开启 submodules，避免再去抓私有主题
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      # 2) 安装 Python & 依赖（开源 mkdocs-material）
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          python -m pip install --upgrade pip
+          # 如果你有 requirements.txt 就装它；否则这两行足够
+          pip install -r requirements.txt || true
+          pip install mkdocs mkdocs-material
+
+      # 3) 构建站点到 ./site
+      - run: mkdocs build --clean --site-dir site
+
+      # 4) 告诉 GitHub 这些文件将作为 Pages 资源
+      - uses: actions/configure-pages@v4
+
+      # 5) 上传静态文件 Artifact
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      # 6) 部署到 gh-pages 分支 → Pages
+      - uses: actions/deploy-pages@v4
