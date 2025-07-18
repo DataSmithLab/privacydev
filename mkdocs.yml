@@ -67,22 +67,22 @@ extra:
         ]
       hero:
         header:
-          !ENV [HOMEPAGE_HEADER, "The guide to restoring your online privacy."]
+          !ENV [HOMEPAGE_HEADER, "Build Privacy-First Applications"]
         subheader:
           !ENV [
             HOMEPAGE_SUBHEADER,
-            "Massive organizations are monitoring your online activities. Privacy Guides is your central privacy and security resource to protect yourself online.",
+            "Help developers implement privacy-by-design principles, choose secure technologies, and build applications that protect user data.",
           ]
         buttons:
           - name:
               !ENV [
                 HOMEPAGE_BUTTON_GET_STARTED_NAME,
-                "Start Your Privacy Journey",
+                "Start Building Privacy-First",
               ]
             title:
               !ENV [
                 HOMEPAGE_BUTTON_GET_STARTED_TITLE,
-                "The first step of your privacy journey",
+                "Essential tools and guides for privacy engineering",
               ]
             link:
               !ENV [
@@ -90,11 +90,11 @@ extra:
                 "tools/",
               ]
             class: md-button md-button--primary
-          - name: !ENV [HOMEPAGE_BUTTON_TOOLS_NAME, "Recommended Tools"]
+          - name: !ENV [HOMEPAGE_BUTTON_TOOLS_NAME, "Developer Tools"]
             title:
               !ENV [
                 HOMEPAGE_BUTTON_TOOLS_TITLE,
-                "Recommended privacy tools, services, and knowledge",
+                "Privacy-focused libraries, SDKs, and development tools",
               ]
             link: !ENV [HOMEPAGE_BUTTON_TOOLS_LINK, "tools/"]
             class: md-button

@@ -1,22 +1,48 @@
 ---
 date:
-    created: 2022-04-22T19:00:00Z
+    created: 2025-01-18T19:00:00Z
 categories:
     - Tutorials
 authors:
-    - contributors
+    - privacy-dev
 tags:
     - Linux
     - Security
+    - Development
 license: BY-SA
-description: We outline a few projects which aim to solve the poor sandboxing situation in Linux relative to operating systems like macOS and ChromeOS.
+description: A developer's guide to implementing application sandboxing on Linux systems to protect user privacy and data security.
 schema_type: AnalysisNewsArticle
 ---
-# Sandboxing Applications on Desktop Linux
+# Building Privacy-First Applications: Linux Sandboxing for Developers
 
-Some sandboxing solutions for desktop Linux distributions do exist, however they are not as strict as those found in macOS or ChromeOS. Applications installed from the package manager (`dnf`, `apt`, etc.) typically have **no** sandboxing or confinement whatsoever. Below are a few projects that aim to solve this problem:<!-- more -->
+As developers, we have a responsibility to protect our users' privacy and data. One of the most effective ways to do this is through proper application sandboxing—limiting what our applications can access and do on users' systems. While Linux offers several sandboxing solutions, many developers overlook them or don't understand their privacy implications.
 
-## Flatpak
+This guide covers practical sandboxing approaches for Linux applications, with a focus on protecting user privacy and building more secure software.<!-- more -->
+
+## Why Sandboxing Matters for Privacy
+
+Traditional Linux applications run with the full privileges of the user who launched them. This means a compromised application can:
+
+- Access and exfiltrate personal files from anywhere in the user's home directory
+- Monitor keystrokes and clipboard content
+- Access network resources without restriction
+- Interact with other applications and system services
+
+For developers building privacy-conscious applications, proper sandboxing isn't optional—it's a fundamental requirement for earning user trust.
+
+## Developer Guidelines: Privacy by Design
+
+When designing your application's sandbox:
+
+**Principle of Least Privilege**: Only request permissions your app actually needs. If you're building a text editor, you don't need camera access.
+
+**Data Minimization**: Limit filesystem access to specific directories rather than broad permissions like `filesystem=home`.
+
+**Network Isolation**: If your app doesn't need internet access, don't request it. If it does, consider implementing application-level controls.
+
+**Transparent Permissions**: Make it clear to users what your application can access and why.
+
+## Flatpak: The Developer's Choice
 
 [Flatpak](https://flatpak.org) aims to be a universal package manager for Linux. One of its main functions is to provide a universal package format which can be used in most Linux distributions. It provides some [permission control](https://docs.flatpak.org/en/latest/sandbox-permissions.html). However, [it is known](https://madaidans-insecurities.github.io/linux.html#flatpak) that Flatpak sandboxing could be improved as particular Flatpaks often have greater permission than required. There does seem to be [some agreement](https://theevilskeleton.gitlab.io/2021/02/11/response-to-flatkill-org.html) that this is the case.
 
@@ -74,3 +100,15 @@ Red Hat develops [Podman](https://docs.podman.io/en/latest/) and secures it with
 Another option is [Kata containers](https://katacontainers.io/), where virtual machines masquerade as containers. Each Kata container has its own Linux kernel and is isolated from the host.
 
 The above container technologies can be useful if you want to run certain web app software on your local network, such as [Vaultwarden](https://github.com/dani-garcia/vaultwarden) or images provided by [LinuxServer.io](https://www.linuxserver.io), to increase privacy by decreasing dependence on various web services. A guide on [hardening Docker and OCI](https://wonderfall.dev/docker-hardening) has been written by the author "Wonderfall."
+
+## Building Trust Through Technical Excellence
+
+As developers, every technical decision we make is ultimately a privacy decision. Choosing to properly sandbox your application isn't just about security—it's about demonstrating to your users that you take their privacy seriously.
+
+The extra effort required to implement proper sandboxing pays dividends in user trust and reduces the blast radius if your application is ever compromised. In an era where users are increasingly concerned about their digital privacy, applications that go the extra mile to protect user data will have a competitive advantage.
+
+Start with Flatpak for desktop applications, implement the principle of least privilege, and always be transparent about what your application can access. Your users—and their data—will thank you.
+
+---
+
+*This article is part of Privacy Dev's mission to help developers build privacy-respecting applications. For more developer-focused privacy guidance, see our [recommendations](../../tools.md).*

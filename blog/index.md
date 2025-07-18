@@ -1,11 +1,11 @@
 ---
-description: Privacy-related news stories, product reviews, opinion pieces, and other important articles from Privacy Guides contributors.
+description: Developer-focused articles on building privacy-respecting applications, implementing secure coding practices, and protecting user data.
 hide:
   - footer
 ---
 
-# Latest Articles
+# Developer Privacy Articles
 
-This is our home for privacy-related news stories, product reviews, opinion pieces, and other important articles.
+This is our collection of developer-focused articles covering practical privacy engineering, secure coding practices, and how to build applications that respect user privacy.
 
-Unlike the rest of our website, these articles don't represent a consensus viewpoint of our community. Instead, they present the opinions of trusted authors within our community as-is. You may even find multiple articles on the same topic with competing viewpoints, intended to further [privacy discussion](https://discuss.privacyguides.net/).
+These articles provide concrete guidance for developers who want to implement privacy by design in their applications. From SDK selection to sandboxing techniques, we cover the technical decisions that matter for user privacy.
