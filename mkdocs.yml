@@ -77,7 +77,7 @@ extra:
           - name:
               !ENV [
                 HOMEPAGE_BUTTON_GET_STARTED_NAME,
-                "Start Building Privacy-First",
+                "Developer Tools & Guides",
               ]
             title:
               !ENV [
@@ -90,14 +90,6 @@ extra:
                 "tools/",
               ]
             class: md-button md-button--primary
-          - name: !ENV [HOMEPAGE_BUTTON_TOOLS_NAME, "Developer Tools"]
-            title:
-              !ENV [
-                HOMEPAGE_BUTTON_TOOLS_TITLE,
-                "Privacy-focused libraries, SDKs, and development tools",
-              ]
-            link: !ENV [HOMEPAGE_BUTTON_TOOLS_LINK, "tools/"]
-            class: md-button
       cta:
         - title:
             !ENV [
@@ -347,10 +339,10 @@ nav:
   - !ENV [NAV_RECOMMENDATIONS, "Recommendations"]:
       - "tools.md"
       - Analytics & Monitoring:
-          - "analytics-monitoring.md"
-          - "choosing-privacy-safe-sdks.md"
+          - "analytics-monitoring/index.md"
+          - Choosing Privacy-Safe SDKs: "analytics-monitoring/choosing-privacy-safe-sdks.md"
       - Authentication & Identity:
-          - "authentication-identity.md"
+          - "authentication-identity/index.md"
   - !ENV [NAV_BLOG, "Articles"]: !ENV [ARTICLES_SITE_BASE_URL, "/articles/"]
   - !ENV [NAV_ABOUT, "About"]:
       - "about.md"
