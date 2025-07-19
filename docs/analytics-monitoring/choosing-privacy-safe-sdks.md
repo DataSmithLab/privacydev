@@ -50,7 +50,7 @@ You should never blindly trust an SDK's documentation or privacy policy. Verifyi
 
 <div class="admonition recommendation" markdown>
 
-![Mitmproxy logo](docs/analytics-monitoring/assets/img/choosin-privacy-safe-sdks/mitmproxy_icon.png){ align=right }
+![Mitmproxy logo](../assets/img/choosin-privacy-safe-sdks/mitmproxy_icon.png){ align=right }
 
 This isn't an analytics SDK, but an **essential auditing tool**. Use a network proxy like Mitmproxy (free, open-source) or Charles Proxy (commercial, GUI-based) to intercept and inspect every single piece of data your app sends over the internet. This is the only way to get the undeniable ground truth of an SDK's behavior.
 
