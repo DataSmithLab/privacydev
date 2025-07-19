@@ -195,8 +195,11 @@ Evaluate tools using this privacy-first checklist:
 ### Real-World Examples
 
 **Health Apps**: Use on-device processing, local storage, and end-to-end encryption
+
 **Financial Apps**: Implement strong authentication without behavioral tracking
+
 **Communication Apps**: Choose protocols with forward secrecy and metadata protection
+
 **IoT Devices**: Process data locally, minimize cloud dependencies
 
 ---
