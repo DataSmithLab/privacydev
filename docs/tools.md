@@ -9,10 +9,10 @@ Building apps with sensitive user data? You need tools that actually protect pri
 
 ## Tool Categories
 
-### :material-chart-line: [Analytics & Monitoring](analytics-monitoring.md)
+### :material-chart-line: [Analytics & Monitoring](analytics-monitoring/)
 Privacy-preserving analytics, crash reporting, and application monitoring tools that respect user privacy while providing essential insights.
 
-### :material-account-key: [Authentication & Identity](authentication-identity.md)
+### :material-account-key: [Authentication & Identity](authentication-identity/)
 Secure authentication systems and identity management solutions that minimize data collection while maintaining strong security.
 
 ### :material-shield-lock: Data Protection & Encryption
@@ -32,7 +32,7 @@ Consent management platforms, data subject rights tools, and legal compliance so
 
 ## SDK & Library Selection
 
-!!! tip "📖 Essential Reading: [Choosing Privacy-Safe SDKs for Health Apps](choosing-privacy-safe-sdks.md)"
+!!! tip "📖 Essential Reading: [Choosing Privacy-Safe SDKs for Health Apps](analytics-monitoring/choosing-privacy-safe-sdks.md)"
     Learn from the Premom case study how poor SDK choices can lead to FTC violations and user privacy breaches. This guide covers SDK privacy risks and provides actionable alternatives.
 
 ### Analytics Without Surveillance
