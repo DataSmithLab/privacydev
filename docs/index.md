@@ -103,7 +103,7 @@ We recommend battle-tested **privacy engineering tools** including encryption li
 
 **Privacy violations kill startups.** One data breach, one GDPR fine, one privacy scandal can destroy years of work. But privacy engineering isn't just about avoiding disasters—it's about building sustainable, trustworthy products that users actually want.
 
-==Privacy engineering is security engineering. It's data engineering. It's user experience. It's business strategy.==
+==Privacy engineering touches every part of your application: security, data handling, user experience, and business decisions.==
 
 [:material-shield-check: Learn the Fundamentals](tools.md){ class="md-button" }
 </div>
