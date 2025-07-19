@@ -16,7 +16,7 @@ Our recommended SDKs are chosen based on a simple principle: **You should contro
 
 <div class="admonition recommendation" markdown>
 
-<!-- ![Matomo logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Matomo_Logo.svg/512px-Matomo_Logo.svg.png){ align=right width="128" } -->
+![Matomo logo](assets/img/choosin-privacy-safe-sdks/matomo_icon.png){ align=right width="128" }
 
 **Matomo (Self-Hosted)** is our top recommendation for health app analytics. As a powerful, open-source platform that you deploy on your own server infrastructure, it guarantees **100% data ownership**. No user data is ever sent to a third party, giving you powerful analytics features without the privacy trade-offs.
 
