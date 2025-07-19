@@ -178,10 +178,15 @@ Process data without seeing it:
 Evaluate tools using this privacy-first checklist:
 
 **✅ Data Minimization**: Does the tool collect only necessary data?
+
 **✅ Local Processing**: Can data be processed on the user's device?
+
 **✅ Encryption**: Is data encrypted in transit and at rest?
+
 **✅ Open Source**: Can you audit the tool's privacy practices?
+
 **✅ Jurisdiction**: Is the tool governed by strong privacy laws?
+
 **✅ Business Model**: Does the vendor profit from user data?
 
 ### Implementation Strategy
