@@ -16,7 +16,7 @@ Our recommended SDKs are chosen based on a simple principle: **You should contro
 
 <div class="admonition recommendation" markdown>
 
-![Matomo logo](../assets/img/choosin-privacy-safe-sdks/matomo_icon.png){ align=right width="128" }
+![Matomo logo](../assets/img/choosin-privacy-safe-sdks/matomo_icon.png){ align=right }
 
 **Matomo (Self-Hosted)** is our top recommendation for health app analytics. As a powerful, open-source platform that you deploy on your own server infrastructure, it guarantees **100% data ownership**. No user data is ever sent to a third party, giving you powerful analytics features without the privacy trade-offs.
 
@@ -31,7 +31,7 @@ Our recommended SDKs are chosen based on a simple principle: **You should contro
 
 <div class="admonition recommendation" markdown>
 
-<!-- ![PostHog logo](https://posthog.com/brand/posthog-logo.svg){ align=right width="128" } -->
+![PostHog logo](../assets/img/choosin-privacy-safe-sdks/posthog_icon.svg){ align=right }
 
 **PostHog (Self-Hosted)** is an open-source, all-in-one product analytics suite. Its self-hosting option lets you analyze sensitive user funnels and behavior privately, keeping all data in-house. It is an excellent choice for teams that need detailed product analytics without sending user data to third parties.
 
@@ -50,7 +50,7 @@ You should never blindly trust an SDK's documentation or privacy policy. Verifyi
 
 <div class="admonition recommendation" markdown>
 
-<!-- ![Mitmproxy logo](https://docs.mitmproxy.org/stable/mitmproxy-logo-2022-t.png){ align=right width="128" } -->
+![Mitmproxy logo](docs/analytics-monitoring/assets/img/choosin-privacy-safe-sdks/mitmproxy_icon.png){ align=right }
 
 This isn't an analytics SDK, but an **essential auditing tool**. Use a network proxy like Mitmproxy (free, open-source) or Charles Proxy (commercial, GUI-based) to intercept and inspect every single piece of data your app sends over the internet. This is the only way to get the undeniable ground truth of an SDK's behavior.
 
