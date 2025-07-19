@@ -9,10 +9,10 @@ Building apps with sensitive user data? You need tools that actually protect pri
 
 ## Tool Categories
 
-### :material-chart-line: [Analytics & Monitoring](analytics-monitoring/)
+### :material-chart-line: [Analytics & Monitoring](analytics-monitoring/index.md)
 Privacy-preserving analytics, crash reporting, and application monitoring tools that respect user privacy while providing essential insights.
 
-### :material-account-key: [Authentication & Identity](authentication-identity/)
+### :material-account-key: [Authentication & Identity](authentication-identity/index.md)
 Secure authentication systems and identity management solutions that minimize data collection while maintaining strong security.
 
 ### :material-shield-lock: Data Protection & Encryption

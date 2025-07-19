@@ -22,23 +22,35 @@ All of this happened through "automated tracking tools"—the SDKs that seemed e
 Most popular SDKs weren't designed with health data privacy in mind. Here's what you need to know about common choices:
 
 ### Google Firebase
+
 **What it offers:** Comprehensive analytics, crash reporting, user engagement tracking
+
 **Privacy concerns:** Automatic data collection, broad data sharing within Google ecosystem, difficult to limit data scope for health apps
+
 **Better for:** Non-health apps where Google's data practices align with your privacy needs
 
 ### Facebook Analytics (Meta)
+
 **What it offers:** User behavior tracking, conversion analytics, audience insights
+
 **Privacy concerns:** Extensive data sharing for advertising, persistent tracking across apps and web
+
 **Health app risk:** High—Meta's business model depends on advertising data
 
 ### AppsFlyer
+
 **What it offers:** Attribution tracking, marketing analytics, fraud prevention
+
 **Privacy concerns:** Shares data with advertising networks, creates detailed user profiles
+
 **Premom used this:** Yes, and it contributed to their FTC violation
 
 ### Umeng (Alibaba)
+
 **What it offers:** Analytics, push notifications, user tracking
+
 **Privacy concerns:** Data potentially subject to Chinese data laws, broad data collection
+
 **Geographic risk:** Especially problematic for US health apps due to data sovereignty issues
 
 ## What Went Wrong
@@ -104,4 +116,4 @@ Your users are trusting you with their most intimate health information. Choose 
 
 ---
 
-*This article is part of Privacy Dev's recommendations for building privacy-respecting applications. For more developer-focused privacy guidance, see our [Tools section](tools.md).*
+*This article is part of Privacy Dev's recommendations for building privacy-respecting applications. For more developer-focused privacy guidance, see our [Tools section](../tools.md).*
