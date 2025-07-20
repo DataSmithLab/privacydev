@@ -332,7 +332,7 @@ markdown_extensions:
 nav:
   - !ENV [NAV_HOME, "Home"]: "index.md"
   - !ENV [NAV_RECOMMENDATIONS, "Recommendations"]:
-      - "tools.md"
+      - tools.md
       - Domains:
           - "domains/index.md"
       - Tasks:
