@@ -210,7 +210,6 @@ nav:
       - index.md
       - editorial.md
       - tags.md
-  - !ENV [NAV_ABOUT, "About"]: !ENV [MAIN_SITE_ABOUT_URL, "/en/about/"]
 
 validation:
   nav:

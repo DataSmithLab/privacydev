@@ -49,42 +49,6 @@
   </section>
 {% endblock %}
 {% block content %}
-  {% if config.theme.language == "en" %}
-    <h2>Top discussions this week</h2>
-    <div class="grid cards">
-      <ul>
-        <!-- start top posts -->
-
-        <!-- end top posts -->
-      </ul>
-
-    </div>
-    <noscript>
-      <p>You have Javascript disabled, so we can't load the latest discussions. Visit one of our top forum categories directly at the links below:</p>
-      <div class="grid cards">
-        <ul>
-          <li>
-            <p><a href="https://discuss.privacyguides.net/c/privacy/4"><strong>Privacy Discussions</strong></a></p>
-            <hr>
-            <p>Find the latest news and discuss privacy, security, and data protection.</p>
-          </li>
-          <li>
-            <p><a href="https://discuss.privacyguides.net/c/site-development/suggestions/6"><strong>Tool Suggestions</strong></a></p>
-            <hr>
-            <p>Suggest a tool for us to review and provide feedback on other suggestions.</p>
-          </li>
-          <li>
-            <p><a href="https://discuss.privacyguides.net/c/privacy/questions/8"><strong>Questions</strong></a></p>
-            <hr>
-            <p>Ask questions and get advice from our community of privacy advocates.</p>
-          </li>
-        </ul>
-      </div>
-      <a href="https://discuss.privacyguides.net/" class="md-button md-button--primary">
-        Join the forum
-      </a>
-    </noscript>
-  {% endif %}
   {{ page.content }}
   <div class="mdx-cta">
     <hr />
@@ -98,23 +62,4 @@
       <p>{{ cta.description }}</p>
     {% endfor %}
   </div>
-  {% if config.theme.language == "en" %}
-    <div class="mdx-discourse-topics">
-      <h3>Latest discussions</h3>
-      <div class="grid cards">
-        <ul>
-          <!-- start latest posts -->
-
-          <!-- end latest posts -->
-        </ul>
-      </div>
-      <noscript>
-        <a href="https://discuss.privacyguides.net/" class="md-button md-button--primary">
-          Join the forum
-        </a>
-      </noscript>
-
-      <hr />
-    </div>
-  {% endif %}
 {% endblock %}

@@ -56,9 +56,7 @@ extra:
         - fontawesome/brands/creative-commons
         - fontawesome/brands/creative-commons-by
         - fontawesome/brands/creative-commons-sa
-      links:
-        - name: !ENV [FOOTER_PRIVACY_NOTICE, "Privacy notice."]
-          url: https://www.privacyguides.org/en/privacy/
+      links: []
     homepage:
       description:
         !ENV [
@@ -112,7 +110,7 @@ extra:
           description:
             !ENV [
               HOMEPAGE_CTA_DESCRIPTION,
-              "If you spot an error, think a provider should not be listed, notice a qualified provider is missing, believe a browser plugin is no longer the best choice, or uncover any other issue, please let us know.",
+              "It's important for a platform like Privacy Dev to always stay current with the latest privacy tools and techniques. We need developers to keep an eye on new privacy libraries, emerging security practices, and evolving compliance requirements. The privacy landscape moves fast, but we try our best to keep up. If you spot outdated recommendations, know of better privacy tools, find missing frameworks, or discover any other issues with our developer resources, please let us know.",
             ]
       rss:
         - title: !ENV [HOMEPAGE_RSS_BLOG_TITLE, "Privacy Guides blog feed"]
@@ -346,7 +344,6 @@ nav:
       - Privacy Aspects:
           - "privacy-aspects/index.md"
   - !ENV [NAV_BLOG, "Articles"]: !ENV [ARTICLES_SITE_BASE_URL, "/articles/"]
-  - !ENV [NAV_PRIVACY, "Privacy"]: "privacy.md"
 
 validation:
   nav:
