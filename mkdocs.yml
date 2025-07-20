@@ -331,15 +331,19 @@ markdown_extensions:
 
 nav:
   - !ENV [NAV_HOME, "Home"]: "index.md"
-  - !ENV [NAV_RECOMMENDATIONS, "Recommendations"]: "tools.md"
-  - Domains: "domains/index.md"
-  - Tasks:
-      - "tasks/index.md"
-      - Analytics & Monitoring:
-          - "tasks/analytics-monitoring/index.md"
-          - Choosing Privacy-Safe SDKs: "tasks/analytics-monitoring/choosing-privacy-safe-sdks.md"
-      - Authentication & Identity: "tasks/authentication-identity/index.md"
-  - Privacy Aspects: "privacy-aspects/index.md"
+  - !ENV [NAV_RECOMMENDATIONS, "Recommendations"]:
+      - "tools.md"
+      - Domains:
+          - "domains/index.md"
+      - Tasks:
+          - "tasks/index.md"
+          - Analytics & Monitoring:
+              - "tasks/analytics-monitoring/index.md"
+              - Choosing Privacy-Safe SDKs: "tasks/analytics-monitoring/choosing-privacy-safe-sdks.md"
+          - Authentication & Identity:
+              - "tasks/authentication-identity/index.md"
+      - Privacy Aspects:
+          - "privacy-aspects/index.md"
   - !ENV [NAV_BLOG, "Articles"]: !ENV [ARTICLES_SITE_BASE_URL, "/articles/"]
 
 validation:
