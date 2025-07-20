@@ -10,8 +10,6 @@ tags:
   - Code Completion
   - HIPAA
   - Financial Services
-authors:
-  - privacy-dev
 links:
   - blog/posts/ai-programming-tools-privacy-guide.md
 ---

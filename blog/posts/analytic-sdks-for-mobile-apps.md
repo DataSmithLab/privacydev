@@ -12,8 +12,6 @@ tags:
   - GDPR
   - User Data
   - HIPAA
-authors:
-  - privacy-dev
 links:
   - blog/posts/analytic-sdks-for-mobile-apps.md
 ---
