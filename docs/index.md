@@ -30,10 +30,3 @@ schema:
 ---
 <!-- markdownlint-disable -->
 
-## About Privacy Dev
-
-![Privacy Dev logo](assets/brand/logos/png/square/pg-yellow.png){ align=right loading=lazy }
-
-Inspired by [Privacy Guides](https://www.privacyguides.org), PrivacyDev is a curated platform designed specifically for developers. Our mission is to provide actionable, technically sound recommendations and insights to help developers design and build software that respects user privacy.
-
-[:material-tools: View All Tools](tools.md){ class="md-button" }
