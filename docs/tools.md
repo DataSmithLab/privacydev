@@ -1,5 +1,5 @@
 ---
-title: "Privacy Engineering Recommendations"
+title: "Recommendations"
 description: "Comprehensive guide to privacy tools, libraries, and frameworks for developers"
 ---
 
