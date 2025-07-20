@@ -1,9 +1,8 @@
 ---
 date: 2025-01-20
 categories:
-  - AI Tools
-  - Privacy Engineering
-  - Enterprise Security
+  - Tutorials
+  - Reviews
 tags:
   - Cursor
   - GitHub Copilot

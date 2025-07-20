@@ -1,10 +1,8 @@
 ---
 date: 2025-01-21
 categories:
-  - Mobile Development
-  - Analytics
-  - Privacy
-  - Data Security
+  - Tutorials
+  - Reviews
 tags:
   - SDKs
   - Firebase
