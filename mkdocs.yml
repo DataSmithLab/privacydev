@@ -67,7 +67,7 @@ extra:
         ]
       hero:
         header:
-          !ENV [HOMEPAGE_HEADER, "Build Privacy-First Applications"]
+          !ENV [HOMEPAGE_HEADER, "Good Privacy by Developers"]
         subheader:
           !ENV [
             HOMEPAGE_SUBHEADER,
@@ -109,9 +109,6 @@ extra:
             - icon: simple/matrix
               name: !ENV [HOMEPAGE_CTA_MATRIX_NAME, "Join the Matrix chat"]
               link: https://matrix.to/#/#privacyguides:matrix.org
-            - icon: material/information-outline
-              name: !ENV [HOMEPAGE_CTA_ABOUT_NAME, "Learn more about us"]
-              link: about/
           description:
             !ENV [
               HOMEPAGE_CTA_DESCRIPTION,
@@ -337,16 +334,19 @@ markdown_extensions:
 nav:
   - !ENV [NAV_HOME, "Home"]: "index.md"
   - !ENV [NAV_RECOMMENDATIONS, "Recommendations"]:
-      - "tools.md"
-      - Analytics & Monitoring:
-          - "analytics-monitoring/index.md"
-          - Choosing Privacy-Safe SDKs: "analytics-monitoring/choosing-privacy-safe-sdks.md"
-      - Authentication & Identity:
-          - "authentication-identity/index.md"
+      - Domains:
+          - "domains/index.md"
+      - Tasks:
+          - "tasks/index.md"
+          - Analytics & Monitoring:
+              - "tasks/analytics-monitoring/index.md"
+              - Choosing Privacy-Safe SDKs: "tasks/analytics-monitoring/choosing-privacy-safe-sdks.md"
+          - Authentication & Identity:
+              - "tasks/authentication-identity/index.md"
+      - Privacy Aspects:
+          - "privacy-aspects/index.md"
   - !ENV [NAV_BLOG, "Articles"]: !ENV [ARTICLES_SITE_BASE_URL, "/articles/"]
-  - !ENV [NAV_ABOUT, "About"]:
-      - "about.md"
-      - "privacy.md"
+  - !ENV [NAV_PRIVACY, "Privacy"]: "privacy.md"
 
 validation:
   nav:
