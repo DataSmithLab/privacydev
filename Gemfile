@@ -12,3 +12,5 @@ gem "mini_magick"
 gem "sass"
 gem "sprockets", "~> 3.7"
 gem "uglifier"
+gem "nokogiri", "1.13.10", platforms: [:x64_mingw]
+gem "webrick"
