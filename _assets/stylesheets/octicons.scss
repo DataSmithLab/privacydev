@@ -1,0 +1,38 @@
+/* GitHub Octicons Font */
+@font-face {
+  font-family: "Octicons";
+  src: url("https://cdn.jsdelivr.net/gh/primer/octicons/build/font/octicons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.octicon {
+  display: inline-block;
+  font: normal normal normal 16px/1 "Octicons";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+
+/* Octicon specific codes */
+.octicon-home:before {
+  content: "\f35a";
+}
+
+.octicon-eye:before {
+  content: "\f04e";
+}
+
+.octicon-info:before {
+  content: "\f059";
+}
+
+.octicon-shield-check:before {
+  content: "\f505";
+}
+
+.octicon-code:before {
+  content: "\f05f";
+} 
