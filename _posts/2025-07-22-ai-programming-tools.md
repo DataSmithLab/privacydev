@@ -73,7 +73,8 @@ When selecting an AI programming assistant, consider these privacy features:
 | Local Processing | Limited       | Yes           | No            |
 | Data Retention   | Varies        | 30 days       | Undisclosed   |
 | Open Source      | No            | Partially     | No            |
-| Privacy Controls  | Basic         | Advanced      | Moderate      |
+| Privacy Controls | Basic         | Advanced      | Moderate      |
+| Opt-In           | 
 
 
 ## Best Practices for Privacy-Conscious Developers
