@@ -175,56 +175,101 @@ Since you are running the entire system, you are responsible for your own compli
 ### Data Collection & Training
 Your code is your most valuable asset. We prioritize tools that give you explicit control over what happens to it.
 
-**Minimum to Qualify:**
-- A clear, public privacy policy detailing data handling.
-- An option to opt-out of model training.
-
-**Best Case:**
-- **Opt-out by default** for all tiers (or for business tiers).
-- Zero data retention policies for prompts and code.
-- No collection of personally identifiable information (PII) or code context beyond what is needed for the immediate query.
+<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+    <h4>Minimum to Qualify</h4>
+    <ul>
+      <li>A clear, public privacy policy detailing data handling.</li>
+      <li>An option to opt-out of model training.</li>
+    </ul>
+  </div>
+  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+    <h4>Best Case</h4>
+    <ul>
+      <li><strong>Opt-out by default</strong> for all tiers (or for business tiers).</li>
+      <li>Zero data retention policies for prompts and code.</li>
+      <li>No collection of PII or code context beyond what is needed.</li>
+    </ul>
+  </div>
+</div>
 
 ### Deployment
 Where the model runs determines the ultimate level of privacy.
 
-**Minimum to Qualify:**
-- Cloud-based with strong, transparent security practices.
-
-**Best Case:**
-- **Self-hosted / On-Premise option** for complete data control.
-- For cloud models, processing occurs in certified, secure data centers (e.g., SOC 2 compliant).
+<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+    <h4>Minimum to Qualify</h4>
+    <ul>
+      <li>Cloud-based with strong, transparent security practices.</li>
+    </ul>
+  </div>
+  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+    <h4>Best Case</h4>
+    <ul>
+      <li><strong>Self-hosted / On-Premise option</strong> for complete data control.</li>
+      <li>For cloud models, processing occurs in certified, secure data centers.</li>
+    </ul>
+  </div>
+</div>
 
 ### Performance
 A private tool is useless if it's too slow to be practical.
 
-**Minimum to Qualify:**
-- Acceptable response times for common coding tasks on standard developer hardware.
-
-**Best Case:**
-- Cloud-centric: Very fast, near-instantaneous completions and chat responses.
-- Local-host: Optimized to run efficiently on consumer-grade CPUs and GPUs.
+<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+    <h4>Minimum to Qualify</h4>
+    <ul>
+      <li>Acceptable response times for common coding tasks.</li>
+    </ul>
+  </div>
+  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+    <h4>Best Case</h4>
+    <ul>
+      <li>Cloud-centric: Very fast, near-instantaneous completions.</li>
+      <li>Local-host: Optimized for consumer-grade CPUs and GPUs.</li>
+    </ul>
+  </div>
+</div>
 
 ### Trust
 Trust is paramount when giving a tool access to your codebase.
 
-**Minimum to Qualify:**
-- Public-facing leadership and a clear business model that does not rely on selling user data.
-
-**Best Case:**
-- **The code for the client/IDE extension is open-sourced**, allowing for community verification.
-- A strong track record and commitment to user privacy.
-- Offers legal indemnification (e.g., copyright commitment).
+<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+    <h4>Minimum to Qualify</h4>
+    <ul>
+      <li>Public-facing leadership and a clear business model.</li>
+    </ul>
+  </div>
+  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+    <h4>Best Case</h4>
+    <ul>
+      <li><strong>Open-source client/IDE extension</strong> for verification.</li>
+      <li>Strong track record and commitment to user privacy.</li>
+      <li>Offers legal indemnification (e.g., copyright commitment).</li>
+    </ul>
+  </div>
+</div>
 
 ### Compliance
 For professional and enterprise use, compliance is non-negotiable.
 
-**Minimum to Qualify:**
-- Clear documentation on their security posture.
-
-**Best Case:**
-- Third-party security audits and certifications (e.g., **SOC 2 Type II**, **ISO 27001**).
-- Willingness to sign a Business Associate Agreement (BAA) for **HIPAA** compliance.
-- Compliance with financial regulations where applicable.
+<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+    <h4>Minimum to Qualify</h4>
+    <ul>
+      <li>Clear documentation on their security posture.</li>
+    </ul>
+  </div>
+  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+    <h4>Best Case</h4>
+    <ul>
+      <li>Third-party security audits (e.g., <strong>SOC 2 Type II</strong>, <strong>ISO 27001</strong>).</li>
+      <li>Willingness to sign a BAA for <strong>HIPAA</strong> compliance.</li>
+      <li>Compliance with financial regulations where applicable.</li>
+    </ul>
+  </div>
+</div>
 
 <!-- ---
 layout: post
