@@ -4,7 +4,7 @@ title: "Privacy Implications of AI Programming Tools for Developers"
 icon: material/code-braces-box
 description: The best AI coding assistants that respect your privacy. Find a provider here that won't leak your proprietary code or secrets.
 cover: ai-tools.webp
-tags: [ai-programming, web]
+tags: [ai-programming]
 ---
 <p style="font-size: 0.9em;">Protects against the following threat(s):</p>
 
@@ -12,14 +12,16 @@ tags: [ai-programming, web]
 - <span class="pg-red">🔑 Secret & Credential Exposure</span>
 - <span class="pg-orange">☁️ Third-Party Data Training</span>
 
-AI programming tools can dramatically boost productivity, but they introduce significant risks to your code's privacy and your company's intellectual property. If you're concerned about where your code is going, who is processing it, and what it's being used for, an **AI Programming Tool** that prioritizes privacy is the solution.
+AI programming tools can dramatically boost productivity, but they introduce significant risks to your code's privacy and your company's intellectual property. As a developer, you need to know: **Which AI tools are the best for protecting your code and credentials?**
+
+This guide answers the key questions developers ask when choosing AI programming tools, focusing on the four most critical dimensions: data retention, training usage, credential security, and deployment options.
 
 <div style="background-color: #ffebee; border-left: 4px solid #f44336; padding: 12px 24px; margin: 20px 0; border-radius: 4px;">
-<h4 style="color: #d32f2f; margin-top: 0;">⚠️ An AI programming tool is not 100% trustworthy by default</h4>
+<h4 style="color: #d32f2f; margin-top: 0;">⚠️ Most AI tools are not privacy-friendly by default</h4>
 
-<p>Most AI coding tools send your code to third-party cloud servers for processing. Without careful configuration and selection, you risk <strong>code leakage</strong>, <strong>intellectual property contamination</strong>, and <strong>inadvertent training on your proprietary data</strong>.</p>
+<p>Most AI coding tools send your code to third-party cloud servers for processing. Without careful selection, you risk <strong>code leakage</strong>, <strong>intellectual property contamination</strong>, and <strong>inadvertent training on your proprietary data</strong>.</p>
 
-<p>A tool's privacy promises are only as good as its technical implementation and business model. This guide helps you choose a tool that aligns with your privacy and security requirements.</p>
+<p>This FAQ-style guide helps you understand what to look for and which tools best protect your interests.</p>
 </div>
 
 
@@ -44,7 +46,7 @@ Our recommended providers have clear data policies, offer options to prevent dat
 <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Copilot logo" width="128">
 </div>
 <div>
-<p><strong>GitHub Copilot</strong> is the most widely adopted AI coding assistant, deeply integrated into the development ecosystem. Its privacy posture differs significantly between its Individual and Business plans.</p>
+<p><strong>GitHub Copilot</strong> is the most widely adopted AI coding assistant, deeply integrated into the development ecosystem.</p>
 </div>
 </div>
 <div style="margin-top: 15px;">
@@ -55,21 +57,30 @@ Our recommended providers have clear data policies, offer options to prevent dat
 </div>
 </div>
 
-<h4><span class="pg-orange">⚠️ Data Training Varies by Tier</span></h4>
+**Q: Should I use the Individual or Business plan?**
+- **Individual ($10/month):** Your code IS used for training unless you manually opt-out
+- **Business ($19/user/month):** Your code is NEVER used for training and is deleted immediately
 
-For **Copilot Individual** users, your code prompts and suggestions **are collected and may be used to train and improve the models** by default. You must manually opt-out in your GitHub settings. For **Copilot Business** and **Enterprise** customers, code prompts are **never** used for training and are deleted immediately after a response is generated.
+**Q: How long do they keep my data?**
+- **Individual:** Indefinite retention (until you opt-out)
+- **Business:** 30 days maximum retention
 
-<h4><span class="pg-green">✅ Strong Compliance (Business Tier)</span></h4>
+**Q: What about my secrets and API keys?**
+- All code (including secrets) is processed in the cloud
+- **Best practice:** Use `.gitignore` to exclude sensitive files
+- Remove API keys before using Copilot
 
-The **Copilot Business** and **Enterprise** tiers are designed for corporate environments. They are compliant with **SOC 2 Type 2**, **ISO 27001**, and can support **HIPAA** compliance via a Business Associate Agreement (BAA). This makes it a trusted choice for companies in regulated industries.
+**Q: Can I deploy it myself?**
+- **No:** Cloud-only service, no self-hosting option
+- All processing happens on Microsoft Azure servers
 
-<h4><span class="pg-red">❌ Cloud-Only Deployment</span></h4>
+**Q: What compliance do they offer?**
+- **Business tier:** SOC 2 Type 2, ISO 27001, HIPAA (with BAA)
+- **Individual tier:** Basic privacy policy only
 
-GitHub Copilot is a cloud-only service. There is no option for on-premise or self-hosted deployment. All code processing happens on Microsoft Azure's servers.
-
-<h4><span class="pg-green">✅ IP Indemnification</span></h4>
-
-For paying customers, Microsoft offers a **Copilot Copyright Commitment**. This means if you are sued for copyright infringement over code generated by Copilot, Microsoft will defend you and pay any damages, assuming you used their filters and didn't intentionally generate infringing code. This transfers significant legal risk from the developer to Microsoft.
+**Q: What if Copilot generates copyrighted code?**
+- **Business customers:** Microsoft offers IP indemnification
+- They'll defend you in copyright lawsuits (with conditions)
 
 ### Cursor
 
@@ -89,20 +100,33 @@ For paying customers, Microsoft offers a **Copilot Copyright Commitment**. This 
 </div>
 </div>
 
-<h4><span class="pg-orange">⚠️ Data Sent to Third-Party Models</span></h4>
+**Q: Is Cursor private by default?**
+- **No:** By default, your code is sent to third-party models (OpenAI, Anthropic)
+- You must manually enable "Privacy Mode" in settings
 
-By default, Cursor sends your code snippets to third-party model providers like OpenAI and Anthropic to generate responses. While Cursor itself has a privacy policy, your data is also subject to the policies of the underlying model provider you choose.
+**Q: What does Privacy Mode do?**
+- Prevents your code from being used for training
+- Still sends code to cloud for processing (required for AI features)
+- Data retained for 30 days for abuse monitoring
 
-<h4><span class="pg-green">✅ Privacy Mode</span></h4>
+**Q: How secure are my credentials?**
+- All code (including secrets) is processed in the cloud
+- **Best practice:** Remove API keys and secrets before using
+- Consider using Privacy Mode for sensitive projects
 
-Cursor offers a "Privacy Mode" for both free and Pro users. When enabled, it is guranteed that code data is never stored by their model providers or used for training. However, this feature is disabled by defualt, and would involves sending your code to the cloud for processing. Data is still retained for a short period (e.g., 30 days) for abuse monitoring by the model provider.
+**Q: Can I run Cursor locally?**
+- **No:** Cursor is cloud-dependent, no self-hosting option
+- All AI processing happens on third-party servers
 
+**Q: What compliance certifications do they have?**
+- **None:** No SOC 2, ISO 27001, or HIPAA compliance
+- Not recommended for enterprise/regulated environments
 
-<h4><span class="pg-red">❌ No Self-Hosting or Compliance Audits</span></h4>
+**Q: Which model provider should I choose?**
+- **Anthropic Claude:** Better privacy (no training on API data)
+- **OpenAI GPT:** More widely used but less privacy-friendly
 
-Cursor is a cloud-dependent editor. It cannot be run in a fully on-premise or self-hosted environment. As of late 2023, it does not hold major security certifications like SOC 2, making it a difficult choice for enterprises with strict compliance needs.
-
-### Claude Code (Anthropic)
+### Claude API (Anthropic)
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
@@ -111,7 +135,7 @@ Cursor is a cloud-dependent editor. It cannot be run in a fully on-premise or se
 <img src="https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png" alt="Anthropic logo" style="width: 100px;">
 </div>
 <div>
-<p><strong>Anthropic's Claude</strong> models are a leading competitor to OpenAI's GPT series. While not a standalone tool, the Claude Code is used by many developers and can be integrated into IDEs. Anthropic has a very strong, business-friendly default privacy policy.</p>
+<p><strong>Anthropic's Claude</strong> API is a leading competitor to OpenAI's GPT series. While not a standalone tool, Claude can be integrated into IDEs and has the strongest privacy policy of any major AI provider.</p>
 </div>
 </div>
 <div style="margin-top: 15px;">
@@ -122,17 +146,35 @@ Cursor is a cloud-dependent editor. It cannot be run in a fully on-premise or se
 </div>
 </div>
 
-#### <span class="pg-green">✅ No Training on API Data by Default</span>
+**Q: Will my code be used to train their models?**
+- **No:** Anthropic has a clear policy - they NEVER train on API data
+- This is the default behavior, no special settings required
+- Your prompts and responses are only used for generating responses
 
-This is Anthropic's key differentiator. They have a clear policy of **not training their models on any data submitted via their business API**. Your prompts and code are only used to generate a response and are not incorporated into their models. This is the default behavior and does not require a special subscription tier.
+**Q: How long do they keep my data?**
+- **Short-term processing only:** Data is not stored for training
+- Responses are generated and discarded immediately
+- No long-term retention of your code or prompts
 
-#### <span class="pg-green">✅ Enterprise-Ready Compliance</span>
+**Q: What about my secrets and credentials?**
+- Code is processed in the cloud but not stored
+- **Best practice:** Still remove sensitive data before sending
+- No retention means lower exposure risk
 
-Anthropic is **SOC 2 Type II** compliant and will sign a **BAA** to support **HIPAA** compliance. This makes it a trustworthy choice for developers building applications that handle sensitive data, such as Protected Health Information (PHI).
+**Q: Can I deploy Claude myself?**
+- **No:** Cloud API only, no self-hosting option
+- You can integrate it into your own applications
+- Processing happens on Anthropic's servers
 
-#### <span class="pg-blue">ℹ️ API, Not a Full Tool</span>
+**Q: What compliance do they offer?**
+- **SOC 2 Type II** certified
+- **HIPAA** compliant (with Business Associate Agreement)
+- **Enterprise-ready** for regulated industries
 
-Claude is an API, not an out-of-the-box IDE extension like Copilot. To use it, you must either build your own integration or use a third-party extension (like Continue.dev) that supports Claude. The privacy guarantees apply to the API endpoint, but you must also trust the extension you are using.
+**Q: How do I use Claude for coding?**
+- Use third-party extensions like **Continue.dev**
+- Build your own integration using their API
+- Privacy guarantees apply to the API, but check your extension's policy
 
 ### Self-Hosted / Local-First
 
@@ -153,23 +195,47 @@ Claude is an API, not an out-of-the-box IDE extension like Copilot. To use it, y
 </div>
 </div>
 
-#### <span class="pg-green">✅ Absolute Privacy and Data Control</span>
+**Q: Will my code be used for training?**
+- **Impossible:** Your code never leaves your machine
+- Zero risk of data collection or training
+- Complete air-gapped privacy
 
-With a self-hosted setup, your code, prompts, and credentials **never leave your machine**. There is zero risk of third-party data collection, training, or leakage. You have full control over the model and the data flow. This is the only way to achieve a truly air-gapped AI coding experience.
+**Q: How long do they keep my data?**
+- **Zero retention:** Nothing is stored externally
+- All processing happens locally on your hardware
+- No cloud storage or third-party servers
 
-#### <span class="pg-green">✅ Fully Open Source and Customizable</span>
+**Q: What about my secrets and credentials?**
+- **Maximum security:** Everything stays on your machine
+- No external exposure of any kind
+- Perfect for sensitive/classified projects
 
-The entire stack, from the model runner (Ollama) to the IDE extensions (Continue.dev, TabbyML), is open-source. This provides full transparency into how the system works. You can inspect the code, customize it, and be certain there are no hidden data collection mechanisms.
+**Q: Can I deploy it myself?**
+- **Yes:** Full self-deployment on your own hardware
+- Complete control over the entire system
+- Can run on your laptop, server, or cloud instance
 
-#### <span class="pg-orange">⚠️ Performance and Hardware Dependent</span>
+**Q: What compliance do they offer?**
+- **Your responsibility:** You control the entire system
+- Inherently compliant with HIPAA, GDPR, etc.
+- No third-party data processing
 
-The major trade-off is performance. The speed and quality of responses depend entirely on your own hardware. While modern CPUs can run smaller models effectively, a powerful GPU (especially one with 8GB+ of VRAM) is highly recommended for a smooth experience with larger, more capable models.
+**Q: What hardware do I need?**
+- **CPU:** Modern multi-core processor (minimum)
+- **GPU:** 8GB+ VRAM recommended for best performance
+- **RAM:** 16GB+ recommended for larger models
+- **Storage:** 10-50GB for models depending on size
 
-#### <span class="pg-blue">ℹ️ Compliance is Your Responsibility</span>
+**Q: How do I get started?**
+- Install **Ollama** on your machine
+- Download open-source models (Llama, CodeLlama, etc.)
+- Use **Continue.dev** or **TabbyML** for IDE integration
 
-Since you are running the entire system, you are responsible for your own compliance. This setup is inherently compliant with privacy regulations like HIPAA and GDPR because no data is transferred to a third-party processor.
+## 
 
-## Criteria
+
+
+## Criteria: How We Evaluate Tools
 
 **Please note we are not affiliated with any of the providers we recommend.** We have developed a clear set of requirements for any AI tool wishing to be recommended.
 

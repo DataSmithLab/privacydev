@@ -159,3 +159,10 @@ img {
   color: $white;
   background-color: $gray-darkest;
 }
+
+// Custom main page width
+.main-page-width {
+  max-width: 650px !important;
+  margin-right: auto;
+  margin-left: auto;
+}

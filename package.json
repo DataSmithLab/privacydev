@@ -3,6 +3,8 @@
   "scripts": {
     "setup": "bin/setup",
     "local": "bundle exec jekyll serve --drafts",
+    "dev": "bundle exec jekyll serve --drafts --incremental --livereload",
+    "fast": "bundle exec jekyll serve --drafts --incremental --limit_posts 1",
     "publish": "bin/deploy"
   },
   "dependencies": {
