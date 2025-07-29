@@ -4,6 +4,7 @@ title: "Privacy Implications of AI Programming Tools for Developers"
 icon: material/code-braces-box
 description: The best AI coding assistants that respect your privacy. Find a provider here that won't leak your proprietary code or secrets.
 cover: ai-tools.webp
+tags: [ai-programming, web]
 ---
 <p style="font-size: 0.9em;">Protects against the following threat(s):</p>
 
