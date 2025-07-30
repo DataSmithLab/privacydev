@@ -6,6 +6,7 @@ description: The best AI coding assistants that respect your privacy. Find a pro
 cover: ai-tools.webp
 tags: [ai-programming]
 ---
+
 <p style="font-size: 0.9em;">Protects against the following threat(s):</p>
 
 - <span class="pg-red">⚠️ Intellectual Property Leakage</span>
@@ -54,20 +55,20 @@ This guide answers the key questions developers ask when choosing AI programming
 ### GitHub Copilot
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
-<div style="overflow: hidden;">
-<div style="float: right; margin-left: 15px;">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Copilot logo" width="128">
-</div>
-<div>
-<p><strong>GitHub Copilot</strong> is the most widely adopted AI coding assistant, deeply integrated into the development ecosystem.</p>
-</div>
-</div>
-<div style="margin-top: 15px;">
-<a href="https://github.com/features/copilot" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Homepage</a>
-<a href="https://docs.github.com/en/site-policy/privacy-policies/github-copilot-business-privacy-statement">👁️ Privacy Policy</a> &nbsp;
-<a href="https://docs.github.com/en/copilot">ℹ️ Documentation</a> &nbsp;
-<a href="https://github.com/features/security">🔒 Security</a>
-</div>
+  <div style="overflow: hidden;">
+    <div style="float: right; margin-left: 15px;">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Copilot logo" width="128">
+      </div>
+      <div>
+      <p><strong>GitHub Copilot</strong> is the most widely adopted AI coding assistant, deeply integrated into the development ecosystem.</p>
+    </div>
+    <div style="margin-top: 35px; margin-bottom: 15px;">
+      <a href="https://github.com/features/copilot" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Homepage</a>
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-copilot-business-privacy-statement">👁️ Privacy Policy</a> &nbsp;
+      <a href="https://docs.github.com/en/copilot">ℹ️ Documentation</a> &nbsp;
+      <a href="https://github.com/features/security">🔒 Security</a>
+    </div>
+  </div>
 </div>
 
 **Q: How long do they keep my data?**
@@ -102,12 +103,13 @@ This guide answers the key questions developers ask when choosing AI programming
 <div>
 <p><strong>Cursor</strong> is a powerful, AI-first code editor forked from VS Code. It is designed for a deep, conversational coding experience, but relies on third-party cloud models for its intelligence.</p>
 </div>
-</div>
-<div style="margin-top: 15px;">
+<div style="margin-top: 15px; margin-bottom: 15px;">
 <a href="https://cursor.sh" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Homepage</a>
 <a href="https://cursor.sh/privacy">👁️ Privacy Policy</a> &nbsp;
 <a href="https://cursor.sh/docs">ℹ️ Documentation</a>
 </div>
+</div>
+
 </div>
 
 **Q: How long do they keep my data?**
@@ -143,12 +145,12 @@ This guide answers the key questions developers ask when choosing AI programming
 <div>
 <p><strong>Anthropic's Claude</strong> API is a leading competitor to OpenAI's GPT series. While not a standalone tool, Claude can be integrated into IDEs and has the strongest privacy policy of any major AI provider.</p>
 </div>
-</div>
-<div style="margin-top: 15px;">
+<div style="margin-top: 15px; margin-bottom: 15px;">
 <a href="https://www.anthropic.com/product" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Homepage</a>
 <a href="https://www.anthropic.com/legal/privacy">👁️ Privacy Policy</a> &nbsp;
 <a href="https://docs.anthropic.com/claude/reference/getting-started-with-the-api">ℹ️ Documentation</a> &nbsp;
 <a href="https://www.anthropic.com/security">🔒 Trust & Safety</a>
+</div>
 </div>
 </div>
 
@@ -187,12 +189,12 @@ This guide answers the key questions developers ask when choosing AI programming
 <div>
 <p>For maximum privacy and control, nothing beats a <strong>self-hosted solution</strong>. This approach involves running an open-source AI model entirely on your own local machine or private server. Tools like <strong>Ollama</strong> and <strong>LM Studio</strong> make this incredibly accessible.</p>
 </div>
-</div>
 <div style="margin-top: 15px;">
 <a href="https://ollama.ai" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Ollama Homepage</a>
 <a href="https://github.com/ollama/ollama">💻 Source Code</a> &nbsp;
 <a href="https://github.com/continuedev/continue">ℹ️ Continue.dev</a> &nbsp;
 <a href="https://github.com/TabbyML/tabby">ℹ️ TabbyML</a>
+</div>
 </div>
 </div>
 
