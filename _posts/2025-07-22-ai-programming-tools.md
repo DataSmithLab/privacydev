@@ -26,16 +26,29 @@ This guide answers the key questions developers ask when choosing AI programming
 
 
 
-## Recommended Providers
+## Quick Comparison: Which Tool is Best?
 
-Our recommended providers have clear data policies, offer options to prevent data training, and in some cases, can be run entirely on your own hardware. Read our [full list of criteria](#criteria) for more information.
+<div style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<h4 style="color: #1976d2; margin-top: 0;">🏆 Best Overall: Claude API</h4>
+<p><strong>Why:</strong> No training on your data, strong compliance, and clear privacy policy. Best balance of privacy and performance.</p>
+</div>
 
-| Provider | Default Opt-in for Training | Deployment | Compliance | Open Source? |
-|---|---|---|---|---|
-| [GitHub Copilot](#github-copilot) | <span class="pg-orange">⚠️ Yes (Individual) / No (Business)</span> | Cloud-Only | <span class="pg-green">✅ SOC 2, HIPAA</span> | <span class="pg-red">❌ No</span> |
-| [Cursor](#cursor) | <span class="pg-orange">⚠️ Yes (by default)</span> | Cloud-Only | <span class="pg-red">❌ None</span> | <span class="pg-red">❌ No</span> |
-| [Claude Code](#claude-api-anthropic) | <span class="pg-green">✅ **No**</span> | Cloud API | <span class="pg-green">✅ SOC 2, HIPAA</span> | <span class="pg-red">❌ No</span> |
-| [Self-Hosted (Ollama)](#self-hosted-local-first) | <span class="pg-green">✅ **N/A**</span> | **On-Premise** | <span class="pg-green">✅ User-Controlled</span> | <span class="pg-green">✅ Yes</span> |
+<div style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<h4 style="color: #f57c00; margin-top: 0;">🥈 Best for Enterprise: GitHub Copilot Business</h4>
+<p><strong>Why:</strong> Strong compliance, no training on business data, and IP indemnification. Expensive but enterprise-ready.</p>
+</div>
+
+<div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<h4 style="color: #388e3c; margin-top: 0;">🥉 Best for Privacy: Self-Hosted (Ollama)</h4>
+<p><strong>Why:</strong> Zero external data exposure, complete control, and open source. Requires more setup and hardware.</p>
+</div>
+
+| Provider | Retention Period | Training Usage | Credential Security | Deployment | Code Ownership |
+|---|---|---|---|---|---|
+| [GitHub Copilot](#github-copilot) | <span class="pg-orange">⚠️ 30 days (Business) / Indefinite (Individual)</span> | <span class="pg-orange">⚠️ Yes (Individual) / No (Business)</span> | <span class="pg-orange">⚠️ Cloud processing</span> | Cloud-Only | <span class="pg-green">✅ You own it (with indemnity)</span> |
+| [Cursor](#cursor) | <span class="pg-orange">⚠️ 30 days (Privacy Mode) / Indefinite (Default)</span> | <span class="pg-orange">⚠️ Yes (Default) / No (Privacy Mode)</span> | <span class="pg-orange">⚠️ Third-party models</span> | Cloud-Only | <span class="pg-red">❌ You own it (no indemnity)</span> |
+| [Claude API](#claude-api-anthropic) | <span class="pg-green">✅ Not stored</span> | <span class="pg-green">✅ **No**</span> | <span class="pg-green">✅ No retention</span> | Cloud API | <span class="pg-red">❌ You own it (no indemnity)</span> |
+| [Self-Hosted (Ollama)](#self-hosted-local-first) | <span class="pg-green">✅ **Zero**</span> | <span class="pg-green">✅ **N/A**</span> | <span class="pg-green">✅ **Maximum**</span> | **On-Premise** | <span class="pg-green">✅ You own it (full control)</span> |
 
 
 ### GitHub Copilot
@@ -57,13 +70,13 @@ Our recommended providers have clear data policies, offer options to prevent dat
 </div>
 </div>
 
-**Q: Should I use the Individual or Business plan?**
-- **Individual ($10/month):** Your code IS used for training unless you manually opt-out
-- **Business ($19/user/month):** Your code is NEVER used for training and is deleted immediately
-
 **Q: How long do they keep my data?**
 - **Individual:** Indefinite retention (until you opt-out)
 - **Business:** 30 days maximum retention
+
+**Q: Will my code be used for training?**
+- **Individual:** Yes, unless you manually opt-out
+- **Business:** No, never used for training
 
 **Q: What about my secrets and API keys?**
 - All code (including secrets) is processed in the cloud
@@ -74,13 +87,10 @@ Our recommended providers have clear data policies, offer options to prevent dat
 - **No:** Cloud-only service, no self-hosting option
 - All processing happens on Microsoft Azure servers
 
-**Q: What compliance do they offer?**
-- **Business tier:** SOC 2 Type 2, ISO 27001, HIPAA (with BAA)
-- **Individual tier:** Basic privacy policy only
-
-**Q: What if Copilot generates copyrighted code?**
-- **Business customers:** Microsoft offers IP indemnification
-- They'll defend you in copyright lawsuits (with conditions)
+**Q: Who owns the code Copilot generates?**
+- **You own it:** All generated code belongs to you
+- **Business tier:** Includes IP indemnification protection
+- **Individual tier:** You own it but no legal protection
 
 ### Cursor
 
@@ -100,14 +110,13 @@ Our recommended providers have clear data policies, offer options to prevent dat
 </div>
 </div>
 
-**Q: Is Cursor private by default?**
-- **No:** By default, your code is sent to third-party models (OpenAI, Anthropic)
-- You must manually enable "Privacy Mode" in settings
+**Q: How long do they keep my data?**
+- **Default mode:** Indefinite retention
+- **Privacy mode:** 30 days retention for abuse monitoring
 
-**Q: What does Privacy Mode do?**
-- Prevents your code from being used for training
-- Still sends code to cloud for processing (required for AI features)
-- Data retained for 30 days for abuse monitoring
+**Q: Will my code be used for training?**
+- **Default mode:** Yes, sent to third-party models
+- **Privacy mode:** No, prevents training usage
 
 **Q: How secure are my credentials?**
 - All code (including secrets) is processed in the cloud
@@ -118,13 +127,10 @@ Our recommended providers have clear data policies, offer options to prevent dat
 - **No:** Cursor is cloud-dependent, no self-hosting option
 - All AI processing happens on third-party servers
 
-**Q: What compliance certifications do they have?**
-- **None:** No SOC 2, ISO 27001, or HIPAA compliance
-- Not recommended for enterprise/regulated environments
-
-**Q: Which model provider should I choose?**
-- **Anthropic Claude:** Better privacy (no training on API data)
-- **OpenAI GPT:** More widely used but less privacy-friendly
+**Q: Who owns the code Cursor generates?**
+- **You own it:** All generated code belongs to you
+- **No indemnity:** No legal protection against copyright claims
+- **Your responsibility:** You're liable for any infringement issues
 
 ### Claude API (Anthropic)
 
@@ -146,15 +152,15 @@ Our recommended providers have clear data policies, offer options to prevent dat
 </div>
 </div>
 
-**Q: Will my code be used to train their models?**
-- **No:** Anthropic has a clear policy - they NEVER train on API data
-- This is the default behavior, no special settings required
-- Your prompts and responses are only used for generating responses
-
 **Q: How long do they keep my data?**
 - **Short-term processing only:** Data is not stored for training
 - Responses are generated and discarded immediately
 - No long-term retention of your code or prompts
+
+**Q: Will my code be used to train their models?**
+- **No:** Anthropic has a clear policy - they NEVER train on API data
+- This is the default behavior, no special settings required
+- Your prompts and responses are only used for generating responses
 
 **Q: What about my secrets and credentials?**
 - Code is processed in the cloud but not stored
@@ -166,15 +172,10 @@ Our recommended providers have clear data policies, offer options to prevent dat
 - You can integrate it into your own applications
 - Processing happens on Anthropic's servers
 
-**Q: What compliance do they offer?**
-- **SOC 2 Type II** certified
-- **HIPAA** compliant (with Business Associate Agreement)
-- **Enterprise-ready** for regulated industries
-
-**Q: How do I use Claude for coding?**
-- Use third-party extensions like **Continue.dev**
-- Build your own integration using their API
-- Privacy guarantees apply to the API, but check your extension's policy
+**Q: Who owns the code Claude generates?**
+- **You own it:** All generated code belongs to you
+- **No indemnity:** No IP indemnification protection
+- **Your responsibility:** You're liable for any copyright issues
 
 ### Self-Hosted / Local-First
 
@@ -195,15 +196,15 @@ Our recommended providers have clear data policies, offer options to prevent dat
 </div>
 </div>
 
-**Q: Will my code be used for training?**
-- **Impossible:** Your code never leaves your machine
-- Zero risk of data collection or training
-- Complete air-gapped privacy
-
 **Q: How long do they keep my data?**
 - **Zero retention:** Nothing is stored externally
 - All processing happens locally on your hardware
 - No cloud storage or third-party servers
+
+**Q: Will my code be used for training?**
+- **Impossible:** Your code never leaves your machine
+- Zero risk of data collection or training
+- Complete air-gapped privacy
 
 **Q: What about my secrets and credentials?**
 - **Maximum security:** Everything stays on your machine
@@ -215,21 +216,10 @@ Our recommended providers have clear data policies, offer options to prevent dat
 - Complete control over the entire system
 - Can run on your laptop, server, or cloud instance
 
-**Q: What compliance do they offer?**
-- **Your responsibility:** You control the entire system
-- Inherently compliant with HIPAA, GDPR, etc.
-- No third-party data processing
-
-**Q: What hardware do I need?**
-- **CPU:** Modern multi-core processor (minimum)
-- **GPU:** 8GB+ VRAM recommended for best performance
-- **RAM:** 16GB+ recommended for larger models
-- **Storage:** 10-50GB for models depending on size
-
-**Q: How do I get started?**
-- Install **Ollama** on your machine
-- Download open-source models (Llama, CodeLlama, etc.)
-- Use **Continue.dev** or **TabbyML** for IDE integration
+**Q: Who owns the code generated by self-hosted tools?**
+- **You own it:** Complete ownership of all generated code
+- **Full control:** No external dependencies or restrictions
+- **Your responsibility:** You're liable for any copyright issues
 
 ## 
 
@@ -237,103 +227,109 @@ Our recommended providers have clear data policies, offer options to prevent dat
 
 ## Criteria: How We Evaluate Tools
 
-**Please note we are not affiliated with any of the providers we recommend.** We have developed a clear set of requirements for any AI tool wishing to be recommended.
+**Please note we are not affiliated with any of the providers we recommend.** We evaluate tools based on the five key dimensions that matter most to developers.
 
-### Data Collection & Training
-Your code is your most valuable asset. We prioritize tools that give you explicit control over what happens to it.
+### 1. Retention Period
+How long your code sits on third-party servers determines exposure risk.
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
     <h4>Minimum to Qualify</h4>
     <ul>
-      <li>A clear, public privacy policy detailing data handling.</li>
-      <li>An option to opt-out of model training.</li>
+      <li>Clear retention policy (30 days or less).</li>
+      <li>Immediate deletion after processing.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li><strong>Opt-out by default</strong> for all tiers (or for business tiers).</li>
-      <li>Zero data retention policies for prompts and code.</li>
-      <li>No collection of PII or code context beyond what is needed.</li>
+      <li><strong>Zero retention</strong> - data never stored.</li>
+      <li>Processing-only with immediate deletion.</li>
+      <li>No long-term storage of any code or prompts.</li>
     </ul>
   </div>
 </div>
 
-### Deployment
-Where the model runs determines the ultimate level of privacy.
+### 2. Training Usage
+Whether your proprietary code becomes part of the AI model.
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
     <h4>Minimum to Qualify</h4>
     <ul>
-      <li>Cloud-based with strong, transparent security practices.</li>
+      <li>Option to opt-out of model training.</li>
+      <li>Clear policy against using your code for training.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li><strong>Self-hosted / On-Premise option</strong> for complete data control.</li>
-      <li>For cloud models, processing occurs in certified, secure data centers.</li>
+      <li><strong>Opt-out by default</strong> for all tiers.</li>
+      <li>Never uses your code for model improvement.</li>
+      <li>Explicit policy against training on user data.</li>
     </ul>
   </div>
 </div>
 
-### Performance
-A private tool is useless if it's too slow to be practical.
+### 3. Credential Security
+How safe your API keys, secrets, and sensitive data are.
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
     <h4>Minimum to Qualify</h4>
     <ul>
-      <li>Acceptable response times for common coding tasks.</li>
+      <li>Secure cloud processing with encryption.</li>
+      <li>Tools to exclude sensitive files.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li>Cloud-centric: Very fast, near-instantaneous completions.</li>
-      <li>Local-host: Optimized for consumer-grade CPUs and GPUs.</li>
+      <li><strong>Local processing only</strong> - no external exposure.</li>
+      <li>Built-in secret detection and exclusion.</li>
+      <li>Zero risk of credential leakage.</li>
     </ul>
   </div>
 </div>
 
-### Trust
-Trust is paramount when giving a tool access to your codebase.
+### 4. Deployment Options
+Where the model runs determines ultimate control.
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
     <h4>Minimum to Qualify</h4>
     <ul>
-      <li>Public-facing leadership and a clear business model.</li>
+      <li>Cloud-based with strong security practices.</li>
+      <li>Transparent data flow documentation.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li><strong>Open-source client/IDE extension</strong> for verification.</li>
-      <li>Strong track record and commitment to user privacy.</li>
-      <li>Offers legal indemnification (e.g., copyright commitment).</li>
+      <li><strong>Self-hosted / On-Premise option</strong> for complete control.</li>
+      <li>Can run entirely on your own hardware.</li>
+      <li>No dependency on external services.</li>
     </ul>
   </div>
 </div>
 
-### Compliance
-For professional and enterprise use, compliance is non-negotiable.
+### 5. Code Ownership
+Legal protection and ownership of generated code.
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
     <h4>Minimum to Qualify</h4>
     <ul>
-      <li>Clear documentation on their security posture.</li>
+      <li>Clear terms that you own generated code.</li>
+      <li>No broad rights granted to the provider.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li>Third-party security audits (e.g., <strong>SOC 2 Type II</strong>, <strong>ISO 27001</strong>).</li>
-      <li>Willingness to sign a BAA for <strong>HIPAA</strong> compliance.</li>
-      <li>Compliance with financial regulations where applicable.</li>
+      <li><strong>IP indemnification</strong> for copyright issues.</li>
+      <li>Legal protection against infringement claims.</li>
+      <li>You retain full ownership and rights.</li>
     </ul>
   </div>
 </div>
