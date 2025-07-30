@@ -17,3 +17,39 @@ $(document).ready(function() {
     return false;
   });
 });
+
+// FAQ Dropdown Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', function() {
+      const answer = this.nextElementSibling;
+      const toggle = this.querySelector('.faq-toggle');
+      
+      // Close all other answers
+      document.querySelectorAll('.faq-answer').forEach(ans => {
+        if (ans !== answer) {
+          ans.classList.remove('active');
+        }
+      });
+      document.querySelectorAll('.faq-question').forEach(q => {
+        if (q !== this) {
+          q.classList.remove('active');
+        }
+      });
+      document.querySelectorAll('.faq-toggle').forEach(t => {
+        if (t !== toggle) {
+          t.classList.remove('active');
+        }
+      });
+      
+      // Toggle current answer
+      answer.classList.toggle('active');
+      this.classList.toggle('active');
+      if (toggle) {
+        toggle.classList.toggle('active');
+      }
+    });
+  });
+});
