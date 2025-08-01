@@ -44,12 +44,16 @@ This guide answers the key questions developers ask when choosing AI programming
 <p><strong>Why:</strong> Zero external data exposure, complete control, and open source. Requires more setup and hardware.</p>
 </div>
 
-| Provider | Retention Period | Training Usage | Credential Security | Deployment | Code Ownership |
+| Provider | Retention Period | Training Usage | Credential Protection | Deployment | IP-Indemnity |
 |---|---|---|---|---|---|
-| [GitHub Copilot](#github-copilot) | <span class="pg-orange">⚠️ 30 days (Business) / Indefinite (Individual)</span> | <span class="pg-orange">⚠️ Yes (Individual) / No (Business)</span> | <span class="pg-orange">⚠️ Cloud processing</span> | Cloud-Only | <span class="pg-green">✅ You own it (with indemnity)</span> |
-| [Cursor](#cursor) | <span class="pg-orange">⚠️ 30 days (Privacy Mode) / Indefinite (Default)</span> | <span class="pg-orange">⚠️ Yes (Default) / No (Privacy Mode)</span> | <span class="pg-orange">⚠️ Third-party models</span> | Cloud-Only | <span class="pg-red">❌ You own it (no indemnity)</span> |
-| [Claude API](#claude-api-anthropic) | <span class="pg-green">✅ Not stored</span> | <span class="pg-green">✅ **No**</span> | <span class="pg-green">✅ No retention</span> | Cloud API | <span class="pg-red">❌ You own it (no indemnity)</span> |
-| [Self-Hosted (Ollama)](#self-hosted-local-first) | <span class="pg-green">✅ **Zero**</span> | <span class="pg-green">✅ **N/A**</span> | <span class="pg-green">✅ **Maximum**</span> | **On-Premise** | <span class="pg-green">✅ You own it (full control)</span> |
+| [GitHub Copilot](#github-copilot) | <span class="pg-orange">⚠️ 28 days (IDE) / 2 years (engagement)</span> | <span class="pg-green">✅ No training by default</span> | <span class="pg-green">✅ User configurable .ignore</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With IP-indemnity</span> |
+| [Cursor](#cursor) | <span class="pg-green">✅ Zero retention (privacy mode)</span> | <span class="pg-orange">⚠️ Only exclude in Privacy-Mode</span> | <span class="pg-orange">⚠️ No credential monitoring</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-red">❌ No indemnity</span> |
+| [Claude API](#claude-api-anthropic) | <span class="pg-green">✅ 30 days (default) / Zero (API)</span> | <span class="pg-green">✅ No default training</span> | <span class="pg-red">❌ No configurable .ignore</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With indemnity</span> |
+| [Windsurf](#windsurf) | <span class="pg-green">✅ Zero retention (team/enterprise)</span> | <span class="pg-orange">⚠️ No training in zero-data mode</span> | <span class="pg-orange">⚠️ Personalized codebases</span> | <span class="pg-green">✅ Hybrid/Cloud Tier</span> | <span class="pg-red">❌ No indemnity</span> |
+| [Gemini CLI](#gemini-cli) | <span class="pg-orange">⚠️ 18 months (individual) / Varies</span> | <span class="pg-orange">⚠️ Training for individuals</span> | <span class="pg-green">✅ .aiexclude support</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With indemnity</span> |
+| [Augment Code](#augment-code) | <span class="pg-red">❌ Indefinite retention</span> | <span class="pg-orange">⚠️ Default training (free tier)</span> | <span class="pg-green">✅ .augmentignore support</span> | <span class="pg-green">✅ Hybrid</span> | <span class="pg-red">❌ No indemnity</span> |
+| [Replit](#replit) | <span class="pg-red">❌ No retention policy</span> | <span class="pg-red">❌ Training for all plans</span> | <span class="pg-red">❌ No credential protection</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-red">❌ No indemnity</span> |
+| [Self-Hosted (Ollama)](#self-hosted-local-first) | <span class="pg-green">✅ Zero retention</span> | <span class="pg-green">✅ No training</span> | <span class="pg-green">✅ Maximum security</span> | <span class="pg-green">✅ Self-hosted</span> | <span class="pg-green">✅ Full control</span> |
 
 
 ### GitHub Copilot
@@ -71,27 +75,26 @@ This guide answers the key questions developers ask when choosing AI programming
   </div>
 </div>
 
-**Q: How long do they keep my data?**
-- **Individual:** Indefinite retention (until you opt-out)
-- **Business:** 30 days maximum retention
+**Q: What is the retention period for different data types?**
+- **Prompt data:** 28 days for IDE access, not retained for other access methods
+- **Engagement data:** Kept for two years for service improvement and abuse detection
+- **Feedback data:** Stored for as long as needed for intended purpose
 
-**Q: Will my code be used for training?**
-- **Individual:** Yes, unless you manually opt-out
-- **Business:** No, never used for training
+**Q: What is the default training option?**
+- **Individual tier:** No training by default, with public code filter and code referencing
+- **Business tier:** No training by default, with user management and data excluded from training
 
-**Q: What about my secrets and API keys?**
-- All code (including secrets) is processed in the cloud
-- **Best practice:** Use `.gitignore` to exclude sensitive files
-- Remove API keys before using Copilot
+**Q: How does credential protection work with .ignore settings?**
+- **Supported .ignore patterns:** Repository-level content exclusion with path patterns like "secrets.json", "secret*", "*.cfg", "/scripts/***"
+- **Credential confidentiality measures:** User configurable settings for organization and enterprise-wide exclusions
 
-**Q: Can I deploy it myself?**
-- **No:** Cloud-only service, no self-hosting option
-- All processing happens on Microsoft Azure servers
+**Q: What deployment options are available?**
+- **Deployment type:** Cloud-based only, no self-hosting option
+- **Infrastructure requirements:** Microsoft Azure servers for all processing
 
-**Q: Who owns the code Copilot generates?**
-- **You own it:** All generated code belongs to you
-- **Business tier:** Includes IP indemnification protection
-- **Individual tier:** You own it but no legal protection
+**Q: What IP-indemnity protection is provided?**
+- **Copyright claim defense:** IP indemnification when Copilot filtering is enabled (ON by default)
+- **Legal coverage scope:** GitHub and Microsoft extend IP indemnity and protection support to customers
 
 ### Cursor
 
@@ -112,27 +115,26 @@ This guide answers the key questions developers ask when choosing AI programming
 
 </div>
 
-**Q: How long do they keep my data?**
-- **Default mode:** Indefinite retention
-- **Privacy mode:** 30 days retention for abuse monitoring
+**Q: What is the retention period for different data types?**
+- **Prompt data:** Zero retention with Fireworks, OpenAI, Anthropic, Google Cloud Vertex API, and xAI agreements
+- **Engagement data:** Zero retention across all infrastructure providers
+- **Feedback data:** Zero retention, no data stored by model providers
 
-**Q: Will my code be used for training?**
-- **Default mode:** Yes, sent to third-party models
-- **Privacy mode:** No, prevents training usage
+**Q: What is the default training option?**
+- **Default mode:** Training enabled by default, code data may be stored for inference speed
+- **Privacy mode:** Guaranteed no training on user code, forcibly enabled for team members
 
-**Q: How secure are my credentials?**
-- All code (including secrets) is processed in the cloud
-- **Best practice:** Remove API keys and secrets before using
-- Consider using Privacy Mode for sensitive projects
+**Q: How does credential protection work with .ignore settings?**
+- **Supported .ignore patterns:** No credential data monitoring on any model providers
+- **Credential confidentiality measures:** No Chinese infrastructure involvement, multi-factor authentication for AWS
 
-**Q: Can I run Cursor locally?**
-- **No:** Cursor is cloud-dependent, no self-hosting option
-- All AI processing happens on third-party servers
+**Q: What deployment options are available?**
+- **Deployment type:** Cloud-based only, no self-hosting option
+- **Infrastructure requirements:** Third-party servers (Fireworks, OpenAI, Anthropic, Google Cloud, xAI)
 
-**Q: Who owns the code Cursor generates?**
-- **You own it:** All generated code belongs to you
-- **No indemnity:** No legal protection against copyright claims
-- **Your responsibility:** You're liable for any infringement issues
+**Q: What IP-indemnity protection is provided?**
+- **Copyright claim defense:** No indemnity protection provided
+- **Legal coverage scope:** Full ownership of generated code stated in terms of service, but no legal protection against claims
 
 ### Claude API (Anthropic)
 
@@ -154,106 +156,211 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 
-**Q: How long do they keep my data?**
-- **Short-term processing only:** Data is not stored for training
-- Responses are generated and discarded immediately
-- No long-term retention of your code or prompts
+**Q: What is the retention period for different data types?**
+- **Prompt data:** 30 days default retention, zero retention with API key from zero data retention organization
+- **Engagement data:** Conversation history removed immediately, automatically deleted after 30 days upon request
+- **Feedback data:** Local storage up to 30 days for session resumption, configurable behavior
 
-**Q: Will my code be used to train their models?**
-- **No:** Anthropic has a clear policy - they NEVER train on API data
-- This is the default behavior, no special settings required
-- Your prompts and responses are only used for generating responses
+**Q: What is the default training option?**
+- **API usage:** No default training for all tiers, only users opt-in for training purposes
+- **Training policy:** By default, Anthropic does not train generative models using code or prompts sent to Claude Code
 
-**Q: What about my secrets and credentials?**
-- Code is processed in the cloud but not stored
-- **Best practice:** Still remove sensitive data before sending
-- No retention means lower exposure risk
+**Q: How does credential protection work with .ignore settings?**
+- **Supported .ignore patterns:** No configurable .ignore file settings available
+- **Credential confidentiality measures:** User responsibility to remove sensitive data before sending
 
-**Q: Can I deploy Claude myself?**
-- **No:** Cloud API only, no self-hosting option
-- You can integrate it into your own applications
-- Processing happens on Anthropic's servers
+**Q: What deployment options are available?**
+- **Deployment type:** Cloud-based only, supported across multiple regions
+- **Infrastructure requirements:** API key authentication, prompt caching enabled by default
 
-**Q: Who owns the code Claude generates?**
-- **You own it:** All generated code belongs to you
-- **No indemnity:** No IP indemnification protection
-- **Your responsibility:** You're liable for any copyright issues
+**Q: What IP-indemnity protection is provided?**
+- **Copyright claim defense:** Anthropic will defend Customer against third-party intellectual property claims
+- **Legal coverage scope:** Indemnification for paid use of Services and Outputs generated through authorized use
 
-### Self-Hosted / Local-First
+### Windsurf
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: right; margin-left: 15px;">
-<img src="https://ollama.ai/public/ollama.png" alt="Ollama logo" width="128">
+<img src="https://windsurf.com/logo.png" alt="Windsurf logo" width="128">
 </div>
 <div>
-<p>For maximum privacy and control, nothing beats a <strong>self-hosted solution</strong>. This approach involves running an open-source AI model entirely on your own local machine or private server. Tools like <strong>Ollama</strong> and <strong>LM Studio</strong> make this incredibly accessible.</p>
+<p><strong>Windsurf</strong> is a privacy-focused AI coding assistant that offers hybrid deployment options and zero-data retention for team and enterprise plans.</p>
 </div>
 <div style="margin-top: 15px;">
-<a href="https://ollama.ai" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Ollama Homepage</a>
-<a href="https://github.com/ollama/ollama">💻 Source Code</a> &nbsp;
-<a href="https://github.com/continuedev/continue">ℹ️ Continue.dev</a> &nbsp;
-<a href="https://github.com/TabbyML/tabby">ℹ️ TabbyML</a>
+<a href="https://windsurf.com" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Homepage</a>
+<a href="https://windsurf.com/security">🔒 Security</a> &nbsp;
+<a href="https://windsurf.com/docs">ℹ️ Documentation</a>
 </div>
 </div>
 </div>
 
-**Q: How long do they keep my data?**
-- **Zero retention:** Nothing is stored externally
-- All processing happens locally on your hardware
-- No cloud storage or third-party servers
+**Q: What is the retention period for different data types?**
+- **Prompt data:** Zero-data retention default for team/enterprise plans, takes minutes to hours to delete
+- **Engagement data:** Only profile data stored while using cloud implementations for authentication
+- **Feedback data:** Flagged input stored for potential violations of Acceptable Use Policy
 
-**Q: Will my code be used for training?**
-- **Impossible:** Your code never leaves your machine
-- Zero risk of data collection or training
-- Complete air-gapped privacy
+**Q: What is the default training option?**
+- **Zero-data mode:** User will never be trained on in zero-data mode
+- **Regular mode:** User will only be trained on non-credential data outside zero-data mode
 
-**Q: What about my secrets and credentials?**
-- **Maximum security:** Everything stays on your machine
-- No external exposure of any kind
-- Perfect for sensitive/classified projects
+**Q: How does credential protection work with .ignore settings?**
+- **Supported .ignore patterns:** Personalized private codebases appended with model for inference
+- **Credential confidentiality measures:** Indexing of private codebases for relevant snippet retrieval
 
-**Q: Can I deploy it myself?**
-- **Yes:** Full self-deployment on your own hardware
-- Complete control over the entire system
-- Can run on your laptop, server, or cloud instance
+**Q: What deployment options are available?**
+- **Deployment type:** Hybrid/Cloud Tier deployment options available
+- **Infrastructure requirements:** Cloud-based with team and enterprise plan options
 
-**Q: Who owns the code generated by self-hosted tools?**
-- **You own it:** Complete ownership of all generated code
-- **Full control:** No external dependencies or restrictions
-- **Your responsibility:** You're liable for any copyright issues
+**Q: What IP-indemnity protection is provided?**
+- **Copyright claim defense:** "You own all of the code generated by Windsurf's products, to the extent permitted by law"
+- **Legal coverage scope:** Full ownership of generated code with legal limitations
 
-## 
+### Gemini CLI
 
+<div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="overflow: hidden;">
+<div style="float: right; margin-left: 15px;">
+<img src="https://developers.google.com/static/gemini/images/gemini-logo.png" alt="Gemini CLI logo" width="128">
+</div>
+<div>
+<p><strong>Gemini CLI</strong> is Google's AI coding assistant with different privacy policies based on authentication method and service tier.</p>
+</div>
+<div style="margin-top: 15px;">
+<a href="https://ai.google.dev/gemini" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Homepage</a>
+<a href="https://ai.google.dev/gemini/docs/privacy">👁️ Privacy</a> &nbsp;
+<a href="https://github.com/google-gemini/gemini-cli">💻 Source Code</a>
+</div>
+</div>
+</div>
 
+**Q: What is the retention period for different data types?**
+- **Prompt data:** 18 months for individuals, varies by authentication method and service tier
+- **Engagement data:** Different retention policies for Individual, Standard/Enterprise, and Developer API tiers
+- **Feedback data:** Human reviewers may read, annotate, and process data for quality improvement
+
+**Q: What is the default training option?**
+- **Individual tier:** Training enabled by default, collects prompts and code for model improvement
+- **Enterprise tier:** No training on private source code, different policies by authentication method
+
+**Q: How does credential protection work with .ignore settings?**
+- **Supported .ignore patterns:** .aiexclude file support for code customization and exclusion
+- **Credential confidentiality measures:** Code customization gives access to private repositories with private indexing
+
+**Q: What deployment options are available?**
+- **Deployment type:** Cloud-based only with multiple third-party service integrations
+- **Infrastructure requirements:** GitHub, GitLab, Google Docs, Sentry, Atlassian Rovo, MongoDB integrations
+
+**Q: What IP-indemnity protection is provided?**
+- **Copyright claim defense:** "We assume certain responsibility for the potential legal risks involved"
+- **Legal coverage scope:** Indemnification for content generated by Gemini for Google Cloud
+
+### Augment Code
+
+<div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="overflow: hidden;">
+<div style="float: right; margin-left: 15px;">
+<img src="https://www.augmentcode.com/logo.png" alt="Augment Code logo" width="128">
+</div>
+<div>
+<p><strong>Augment Code</strong> offers hybrid deployment with Remote Agent cloud version and IDE-bound Agent, with different training policies by tier.</p>
+</div>
+<div style="margin-top: 15px;">
+<a href="https://www.augmentcode.com" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Homepage</a>
+<a href="https://docs.augmentcode.com">ℹ️ Documentation</a> &nbsp;
+<a href="https://www.augmentcode.com/legal/privacy-policy">👁️ Privacy Policy</a>
+</div>
+</div>
+</div>
+
+**Q: What is the retention period for different data types?**
+- **Prompt data:** Indefinite retention period, retained as long as necessary for service provision
+- **Engagement data:** Varies depending on nature of data and collection purpose
+- **Feedback data:** Securely deleted or anonymized after applicable retention period
+
+**Q: What is the default training option?**
+- **Free tier:** Default training enabled, grants rights to use Customer Code and Output for model training
+- **Pro & Enterprise tier:** No training at all, promises Customer Code or Output is never used to train AI models
+
+**Q: How does credential protection work with .ignore settings?**
+- **Supported .ignore patterns:** .augmentignore file support using glob patterns similar to gitignore
+- **Credential confidentiality measures:** Create .augmentignore file in workspace root to ignore files during indexing
+
+**Q: What deployment options are available?**
+- **Deployment type:** Hybrid deployment with Remote Agent (cloud) and Agent (IDE-bound) options
+- **Infrastructure requirements:** Each Remote Agent runs on secure environment with independent workspace management
+
+**Q: What IP-indemnity protection is provided?**
+- **Copyright claim defense:** No indemnity protection provided
+- **Legal coverage scope:** Full ownership of generated code but no legal protection against claims
+
+### Replit
+
+<div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="overflow: hidden;">
+<div style="float: right; margin-left: 15px;">
+<img src="https://replit.com/public/images/logo.png" alt="Replit logo" width="128">
+</div>
+<div>
+<p><strong>Replit</strong> is a cloud-based development platform with limited privacy protections and training on all plans.</p>
+</div>
+<div style="margin-top: 15px;">
+<a href="https://replit.com" style="display: inline-block; padding: 8px 16px; background-color: #4caf50; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px;">🏠 Homepage</a>
+<a href="https://replit.com/terms-of-service">📄 Terms of Service</a> &nbsp;
+<a href="https://docs.replit.com/legal-and-security-info">🔒 Security</a>
+</div>
+</div>
+</div>
+
+**Q: What is the retention period for different data types?**
+- **Prompt data:** No retention policy, only request deletion available
+- **Engagement data:** Inactive accounts terminated after 1-year period, associated data deleted
+- **Feedback data:** Replit Apps associated with inactive free accounts are deleted
+
+**Q: What is the default training option?**
+- **All plans:** Training enabled for all plans (Free, Core, Teams)
+- **Public Repls:** Content may be used for improving Service and training large language models
+
+**Q: How does credential protection work with .ignore settings?**
+- **Supported .ignore patterns:** No setting for ignoring credential files
+- **Credential confidentiality measures:** No responsibility for protecting users' credentials
+
+**Q: What deployment options are available?**
+- **Deployment type:** Cloud-based only, no self-hosting option
+- **Infrastructure requirements:** Cloud platform with limited privacy controls
+
+**Q: What IP-indemnity protection is provided?**
+- **Copyright claim defense:** No indemnity protection provided
+- **Legal coverage scope:** Service used at own risk, no responsibility for loss or damage
 
 ## Criteria: How We Evaluate Tools
 
 **Please note we are not affiliated with any of the providers we recommend.** We evaluate tools based on the five key dimensions that matter most to developers.
 
 ### 1. Retention Period
-How long your code sits on third-party servers determines exposure risk.
+The storage period with respect to various types of data (Prompt, Engagement data, and Feedback data).
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
     <h4>Minimum to Qualify</h4>
     <ul>
-      <li>Clear retention policy (30 days or less).</li>
-      <li>Immediate deletion after processing.</li>
+      <li>Clear retention policy for different data types.</li>
+      <li>Prompt data: 30 days or less.</li>
+      <li>Engagement data: 90 days or less.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li><strong>Zero retention</strong> - data never stored.</li>
+      <li><strong>Zero retention</strong> - no data stored.</li>
       <li>Processing-only with immediate deletion.</li>
-      <li>No long-term storage of any code or prompts.</li>
+      <li>Clear distinction between data types.</li>
     </ul>
   </div>
 </div>
 
 ### 2. Training Usage
-Whether your proprietary code becomes part of the AI model.
+Default Training option (usually varies by subscription tier).
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
@@ -261,6 +368,7 @@ Whether your proprietary code becomes part of the AI model.
     <ul>
       <li>Option to opt-out of model training.</li>
       <li>Clear policy against using your code for training.</li>
+      <li>Different options by subscription tier.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
@@ -273,29 +381,30 @@ Whether your proprietary code becomes part of the AI model.
   </div>
 </div>
 
-### 3. Credential Security
-How safe your API keys, secrets, and sensitive data are.
+### 3. Credential Protection
+Credential Confidentiality (.ignore setting).
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
     <h4>Minimum to Qualify</h4>
     <ul>
+      <li>Support for .gitignore patterns.</li>
+      <li>Basic credential detection and exclusion.</li>
       <li>Secure cloud processing with encryption.</li>
-      <li>Tools to exclude sensitive files.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li><strong>Local processing only</strong> - no external exposure.</li>
+      <li><strong>Advanced .ignore support</strong> - multiple patterns.</li>
       <li>Built-in secret detection and exclusion.</li>
-      <li>Zero risk of credential leakage.</li>
+      <li>Local processing only - no external exposure.</li>
     </ul>
   </div>
 </div>
 
-### 4. Deployment Options
-Where the model runs determines ultimate control.
+### 4. Deployment
+Self-Hosted/Cloud-based/Hybrid Agent Method.
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
@@ -303,20 +412,21 @@ Where the model runs determines ultimate control.
     <ul>
       <li>Cloud-based with strong security practices.</li>
       <li>Transparent data flow documentation.</li>
+      <li>Reliable cloud infrastructure.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
       <li><strong>Self-hosted / On-Premise option</strong> for complete control.</li>
-      <li>Can run entirely on your own hardware.</li>
+      <li>Hybrid deployment options available.</li>
       <li>No dependency on external services.</li>
     </ul>
   </div>
 </div>
 
-### 5. Code Ownership
-Legal protection and ownership of generated code.
+### 5. IP-Indemnity
+Defend against copyright claims from others.
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
@@ -324,6 +434,7 @@ Legal protection and ownership of generated code.
     <ul>
       <li>Clear terms that you own generated code.</li>
       <li>No broad rights granted to the provider.</li>
+      <li>Basic copyright protection.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
@@ -331,7 +442,7 @@ Legal protection and ownership of generated code.
     <ul>
       <li><strong>IP indemnification</strong> for copyright issues.</li>
       <li>Legal protection against infringement claims.</li>
-      <li>You retain full ownership and rights.</li>
+      <li>Comprehensive defense against copyright claims.</li>
     </ul>
   </div>
 </div>
