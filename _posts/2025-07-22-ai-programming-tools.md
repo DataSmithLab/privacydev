@@ -31,17 +31,17 @@ This guide answers the key questions developers ask when choosing AI programming
 
 <div style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 16px; margin: 20px 0; border-radius: 4px;">
 <h4 style="color: #1976d2; margin-top: 0;">🏆 Best Overall: Claude API</h4>
-<p><strong>Why:</strong> No training on your data, strong compliance, and clear privacy policy. Best balance of privacy and performance.</p>
+<p><strong>Why:</strong> No default training, zero retention with API, strong IP indemnification, and clear privacy policy. Best balance of privacy and performance.</p>
 </div>
 
 <div style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 16px; margin: 20px 0; border-radius: 4px;">
 <h4 style="color: #f57c00; margin-top: 0;">🥈 Best for Enterprise: GitHub Copilot Business</h4>
-<p><strong>Why:</strong> Strong compliance, no training on business data, and IP indemnification. Expensive but enterprise-ready.</p>
+<p><strong>Why:</strong> No training by default, user configurable .ignore settings, IP indemnification, and enterprise-ready compliance.</p>
 </div>
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
-<h4 style="color: #388e3c; margin-top: 0;">🥉 Best for Privacy: Self-Hosted (Ollama)</h4>
-<p><strong>Why:</strong> Zero external data exposure, complete control, and open source. Requires more setup and hardware.</p>
+<h4 style="color: #388e3c; margin-top: 0;">🥉 Best for Privacy: Windsurf</h4>
+<p><strong>Why:</strong> Zero retention for team/enterprise plans, hybrid deployment options, and no training in zero-data mode.</p>
 </div>
 
 | Provider | Retention Period | Training Usage | Credential Protection | Deployment | IP-Indemnity |
