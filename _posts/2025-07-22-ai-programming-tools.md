@@ -30,18 +30,18 @@ This guide answers the key questions developers ask when choosing AI programming
 ## Quick Comparison: Which Tool is Best?
 
 <div style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 16px; margin: 20px 0; border-radius: 4px;">
-<h4 style="color: #1976d2; margin-top: 0;">🏆 Best Overall: Claude API</h4>
-<p><strong>Why:</strong> No default training, zero retention with API, strong IP indemnification, and clear privacy policy. Best balance of privacy and performance.</p>
+<h4 style="color: #1976d2; margin-top: 0;">🏆 Best Overall: GitHub Copilot</h4>
+<p><strong>Why:</strong> Strong credential protection with user configurable .ignore, IP indemnification, 28 days retention for IDE, and enterprise-ready cloud deployment.</p>
 </div>
 
 <div style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 16px; margin: 20px 0; border-radius: 4px;">
-<h4 style="color: #f57c00; margin-top: 0;">🥈 Best for Enterprise: GitHub Copilot Business</h4>
-<p><strong>Why:</strong> No training by default, user configurable .ignore settings, IP indemnification, and enterprise-ready compliance.</p>
+<h4 style="color: #f57c00; margin-top: 0;">🥈 Best for Enterprise: Gemini CLI</h4>
+<p><strong>Why:</strong> Built-in credential protection with default patterns, IP indemnification, but longer retention (18 months) and cloud-only deployment.</p>
 </div>
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
 <h4 style="color: #388e3c; margin-top: 0;">🥉 Best for Privacy: Windsurf</h4>
-<p><strong>Why:</strong> Zero retention for team/enterprise plans, hybrid deployment options, and no training in zero-data mode.</p>
+<p><strong>Why:</strong> Zero retention for team/enterprise plans, hybrid deployment options, but limited credential protection and no IP indemnity.</p>
 </div>
 
 | Provider | Retention Period | Training Usage | Credential Protection | Deployment | IP-Indemnity |
@@ -243,8 +243,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Enterprise tier:** No training on private source code, different policies by authentication method
 
 **Q: How does credential protection work with .ignore settings?**
-- **Supported .ignore patterns:** .aiexclude file support for code customization and exclusion
-- **Credential confidentiality measures:** Code customization gives access to private repositories with private indexing
+- **Supported .ignore patterns:** Default patterns include environment files (/.env, /.env.*), credentials (/.credentials.json, /.secrets.json), and keys (/*.key, /*.pem, /id_rsa)
+- **Credential confidentiality measures:** Built-in settings to ignore and exclude sensitive files without per-project configuration
 
 **Q: What deployment options are available?**
 - **Deployment type:** Cloud-based only with multiple third-party service integrations
