@@ -29,93 +29,7 @@ This guide answers the key questions developers ask when choosing AI programming
 
 **Please note we are not affiliated with any of the providers we recommend.** We evaluate tools based on the five key dimensions that matter most to developers.
 
-### 1. Retention Period
-
-**Threat:** An engineer submits proprietary source code or algorithmic logic to a cloud-based AI service with a long-term data retention policy. This sensitive intellectual property is stored on the provider's infrastructure for an extended period, creating a significant attack surface. In the event of a data breach at the third-party provider, this unreleased and commercially sensitive information could be exfiltrated and publicly disclosed before it is brought to market.
-
-<details>
-<summary><strong>FAQ 1: How can I prevent my proprietary logic from being stored long-term on a provider's servers?</strong></summary>
-<p>You should choose an AI provider or enterprise plan that explicitly offers a "zero-data retention" policy, ensuring your prompts are not stored after being processed.</p>
-</details>
-
-<details>
-<summary><strong>FAQ 2: What does a "zero-data retention" policy actually guarantee?</strong></summary>
-<p>A "zero-data retention" policy guarantees that the provider will not store your prompts or code snippets on their servers after the request has been processed, making it the most secure option.</p>
-</details>
-
-<details>
-<summary><strong>FAQ 3: If zero-retention isn't an option, how do I manage the risk of a 30-day retention policy?</strong></summary>
-<p>With a 30-day policy, you must trust the provider's data deletion processes and accept the risk of exposure during that window, making it crucial to evaluate their security and compliance documentation.</p>
-</details>
-
-<details>
-<summary><strong>FAQ 4: Are there alternatives that completely avoid sending proprietary data to a third party?</strong></summary>
-<p>Yes, you can use self-hosted or on-premise AI models, which ensures your proprietary code never leaves your own infrastructure and gives you full control over data retention.</p>
-</details>
-
-<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
-  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
-    <h4>Minimum to Qualify</h4>
-    <ul>
-      <li>Clear retention policy for different data types.</li>
-      <li>Prompt data: 30 days or less.</li>
-      <li>Engagement data: 90 days or less.</li>
-    </ul>
-  </div>
-  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
-    <h4>Best Case</h4>
-    <ul>
-      <li><strong>Zero retention</strong> - no data stored.</li>
-      <li>Processing-only with immediate deletion.</li>
-      <li>Clear distinction between data types.</li>
-    </ul>
-  </div>
-</div>
-
-### 2. Training Usage
-
-**Threat:** Usually under the terms of service for a free or standard tier, an AI provider reserves the right to use all submitted data, including proprietary code and business logic, for training its global models. This means an organization's intellectual property is being ingested into a training corpus for a publicly accessible model. This creates a risk that the model may inadvertently leak this proprietary information or that the absorbed logic could benefit competitors who use the same service.
-
-<details>
-<summary><strong>FAQ 1: How can I definitively confirm whether my code is being used to train the provider's public models?</strong></summary>
-<p>You must read the Terms of Service and Privacy Policy, as enterprise plans almost always guarantee your code will not be used for training, whereas free tiers often assume it will be.</p>
-</details>
-
-<details>
-<summary><strong>FAQ 2: Is there always a clear opt-out for training usage, or is it sometimes the default for free tiers?</strong></summary>
-<p>It is very often the default for free tiers, and the only way to guarantee your code isn't used for training is typically to upgrade to a paid subscription.</p>
-</details>
-
-<details>
-<summary><strong>FAQ 3: If we upgrade to a paid enterprise plan, how can we be sure that none of our past (free-tier) usage will be used for future training?</strong></summary>
-<p>Any data submitted while on a free tier may have already been ingested into a training pipeline, and it's unlikely a provider can retroactively remove it.</p>
-</details>
-
-<details>
-<summary><strong>FAQ 4: Does 'training' mean the model can reproduce my exact code, or is it just learning statistical patterns?</strong></summary>
-<p>The model learns statistical patterns but can also memorize and reproduce specific examples from its training data, creating a risk that it could leak your proprietary code.</p>
-</details>
-
-<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
-  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
-    <h4>Minimum to Qualify</h4>
-    <ul>
-      <li>Option to opt-out of model training.</li>
-      <li>Clear policy against using your code for training.</li>
-      <li>Different options by subscription tier.</li>
-    </ul>
-  </div>
-  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
-    <h4>Best Case</h4>
-    <ul>
-      <li><strong>Opt-out by default</strong> for all tiers.</li>
-      <li>Never uses your code for model improvement.</li>
-      <li>Explicit policy against training on user data.</li>
-    </ul>
-  </div>
-</div>
-
-### 3. Credential Protection
+### 1. Credential Protection
 
 **Threat:** A developer inadvertently includes a hardcoded credential, such as an API key or database token, in a code snippet submitted to a third-party AI assistant. This secret is then absorbed into the provider's training dataset, creating a persistent vulnerability. A malicious actor could later use targeted prompt injection techniques to extract the credential from the model, leading to an unauthorized breach of the associated service.
 
@@ -158,45 +72,7 @@ This guide answers the key questions developers ask when choosing AI programming
   </div>
 </div>
 
-### 4. Deployment
-
-**Threat:** An organization operating within a strict regulatory framework (e.g., GDPR, HIPAA) cannot adopt a cloud-native AI service because its data processing occurs in a geographic region that violates data residency requirements. The transmission of any source code or user data to servers outside the mandated jurisdiction would constitute a direct compliance violation. This exposes the organization to significant legal and financial penalties and prevents the use of the tool.
-
-<details>
-<summary><strong>FAQ 1: How can I determine the geographic location where a cloud-based AI tool processes my code?</strong></summary>
-<p>Reputable enterprise providers specify data processing locations in their trust center or terms of service and may offer region-specific endpoints for compliance.</p>
-</details>
-
-<details>
-<summary><strong>FAQ 2: Are there viable self-hosted or on-premise AI coding assistants that offer comparable performance?</strong></summary>
-<p>Yes, you can self-host open-source models using frameworks like Ollama, or use enterprise solutions from providers that offer on-premise deployment options for compliance.</p>
-</details>
-
-<details>
-<summary><strong>FAQ 3: What is a 'hybrid' deployment model, and how does it help with compliance?</strong></summary>
-<p>A hybrid model helps with compliance by keeping sensitive components on your infrastructure while using the cloud for less sensitive tasks, such as sending a sanitized representation of code for processing.</p>
-</details>
-
-<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
-  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
-    <h4>Minimum to Qualify</h4>
-    <ul>
-      <li>Cloud-based with strong security practices.</li>
-      <li>Transparent data flow documentation.</li>
-      <li>Reliable cloud infrastructure.</li>
-    </ul>
-  </div>
-  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
-    <h4>Best Case</h4>
-    <ul>
-      <li><strong>Self-hosted / On-Premise option</strong> for complete control.</li>
-      <li>Hybrid deployment options available.</li>
-      <li>No dependency on external services.</li>
-    </ul>
-  </div>
-</div>
-
-### 5. IP-Indemnity
+### 2. IP-Indemnity
 
 **Threat:** An AI code generation tool, trained on a diverse corpus of public repositories, produces code that is a derivative work of a project governed by a restrictive copyleft license (e.g., GPL). If this generated code is integrated into a proprietary commercial product, it can cause license contamination of the entire codebase. This may legally obligate the company to release its proprietary source code under the terms of the original copyleft license, creating a significant intellectual property risk.
 
@@ -235,6 +111,130 @@ This guide answers the key questions developers ask when choosing AI programming
       <li><strong>IP indemnification</strong> for copyright issues.</li>
       <li>Legal protection against infringement claims.</li>
       <li>Comprehensive defense against copyright claims.</li>
+    </ul>
+  </div>
+</div>
+
+### 3. Retention Period
+
+**Threat:** An engineer submits proprietary source code or algorithmic logic to a cloud-based AI service with a long-term data retention policy. This sensitive intellectual property is stored on the provider's infrastructure for an extended period, creating a significant attack surface. In the event of a data breach at the third-party provider, this unreleased and commercially sensitive information could be exfiltrated and publicly disclosed before it is brought to market.
+
+<details>
+<summary><strong>FAQ 1: How can I prevent my proprietary logic from being stored long-term on a provider's servers?</strong></summary>
+<p>You should choose an AI provider or enterprise plan that explicitly offers a "zero-data retention" policy, ensuring your prompts are not stored after being processed.</p>
+</details>
+
+<details>
+<summary><strong>FAQ 2: What does a "zero-data retention" policy actually guarantee?</strong></summary>
+<p>A "zero-data retention" policy guarantees that the provider will not store your prompts or code snippets on their servers after the request has been processed, making it the most secure option.</p>
+</details>
+
+<details>
+<summary><strong>FAQ 3: If zero-retention isn't an option, how do I manage the risk of a 30-day retention policy?</strong></summary>
+<p>With a 30-day policy, you must trust the provider's data deletion processes and accept the risk of exposure during that window, making it crucial to evaluate their security and compliance documentation.</p>
+</details>
+
+<details>
+<summary><strong>FAQ 4: Are there alternatives that completely avoid sending proprietary data to a third party?</strong></summary>
+<p>Yes, you can use self-hosted or on-premise AI models, which ensures your proprietary code never leaves your own infrastructure and gives you full control over data retention.</p>
+</details>
+
+<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+    <h4>Minimum to Qualify</h4>
+    <ul>
+      <li>Clear retention policy for different data types.</li>
+      <li>Prompt data: 30 days or less.</li>
+      <li>Engagement data: 90 days or less.</li>
+    </ul>
+  </div>
+  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+    <h4>Best Case</h4>
+    <ul>
+      <li><strong>Zero retention</strong> - no data stored.</li>
+      <li>Processing-only with immediate deletion.</li>
+      <li>Clear distinction between data types.</li>
+    </ul>
+  </div>
+</div>
+
+### 4. Deployment
+
+**Threat:** An organization operating within a strict regulatory framework (e.g., GDPR, HIPAA) cannot adopt a cloud-native AI service because its data processing occurs in a geographic region that violates data residency requirements. The transmission of any source code or user data to servers outside the mandated jurisdiction would constitute a direct compliance violation. This exposes the organization to significant legal and financial penalties and prevents the use of the tool.
+
+<details>
+<summary><strong>FAQ 1: How can I determine the geographic location where a cloud-based AI tool processes my code?</strong></summary>
+<p>Reputable enterprise providers specify data processing locations in their trust center or terms of service and may offer region-specific endpoints for compliance.</p>
+</details>
+
+<details>
+<summary><strong>FAQ 2: Are there viable self-hosted or on-premise AI coding assistants that offer comparable performance?</strong></summary>
+<p>Yes, you can self-host open-source models using frameworks like Ollama, or use enterprise solutions from providers that offer on-premise deployment options for compliance.</p>
+</details>
+
+<details>
+<summary><strong>FAQ 3: What is a 'hybrid' deployment model, and how does it help with compliance?</strong></summary>
+<p>A hybrid model helps with compliance by keeping sensitive components on your infrastructure while using the cloud for less sensitive tasks, such as sending a sanitized representation of code for processing.</p>
+</details>
+
+<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+    <h4>Minimum to Qualify</h4>
+    <ul>
+      <li>Cloud-based with strong security practices.</li>
+      <li>Transparent data flow documentation.</li>
+      <li>Reliable cloud infrastructure.</li>
+    </ul>
+  </div>
+  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+    <h4>Best Case</h4>
+    <ul>
+      <li><strong>Self-hosted / On-Premise option</strong> for complete control.</li>
+      <li>Hybrid deployment options available.</li>
+      <li>No dependency on external services.</li>
+    </ul>
+  </div>
+</div>
+
+### 5. Training Usage
+
+**Threat:** Usually under the terms of service for a free or standard tier, an AI provider reserves the right to use all submitted data, including proprietary code and business logic, for training its global models. This means an organization's intellectual property is being ingested into a training corpus for a publicly accessible model. This creates a risk that the model may inadvertently leak this proprietary information or that the absorbed logic could benefit competitors who use the same service.
+
+<details>
+<summary><strong>FAQ 1: How can I definitively confirm whether my code is being used to train the provider's public models?</strong></summary>
+<p>You must read the Terms of Service and Privacy Policy, as enterprise plans almost always guarantee your code will not be used for training, whereas free tiers often assume it will be.</p>
+</details>
+
+<details>
+<summary><strong>FAQ 2: Is there always a clear opt-out for training usage, or is it sometimes the default for free tiers?</strong></summary>
+<p>It is very often the default for free tiers, and the only way to guarantee your code isn't used for training is typically to upgrade to a paid subscription.</p>
+</details>
+
+<details>
+<summary><strong>FAQ 3: If we upgrade to a paid enterprise plan, how can we be sure that none of our past (free-tier) usage will be used for future training?</strong></summary>
+<p>Any data submitted while on a free tier may have already been ingested into a training pipeline, and it's unlikely a provider can retroactively remove it.</p>
+</details>
+
+<details>
+<summary><strong>FAQ 4: Does 'training' mean the model can reproduce my exact code, or is it just learning statistical patterns?</strong></summary>
+<p>The model learns statistical patterns but can also memorize and reproduce specific examples from its training data, creating a risk that it could leak your proprietary code.</p>
+</details>
+
+<div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+    <h4>Minimum to Qualify</h4>
+    <ul>
+      <li>Option to opt-out of model training.</li>
+      <li>Clear policy against using your code for training.</li>
+      <li>Different options by subscription tier.</li>
+    </ul>
+  </div>
+  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+    <h4>Best Case</h4>
+    <ul>
+      <li><strong>Opt-out by default</strong> for all tiers.</li>
+      <li>Never uses your code for model improvement.</li>
+      <li>Explicit policy against training on user data.</li>
     </ul>
   </div>
 </div>
@@ -286,6 +286,9 @@ This guide answers the key questions developers ask when choosing AI programming
   </div>
 </div>
 
+<details>
+<summary><strong>📋 View Detail</strong></summary>
+
 **Q: What is the retention period for different data types?**
 - **Prompt data:** 28 days for IDE access, not retained for other access methods
 - **Engagement data:** Kept for two years for service improvement and abuse detection
@@ -307,6 +310,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Copyright claim defense:** IP indemnification when Copilot filtering is enabled (ON by default)
 - **Legal coverage scope:** GitHub and Microsoft extend IP indemnity and protection support to customers
 
+</details>
+
 ### Cursor
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
@@ -325,6 +330,9 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 
 </div>
+
+<details>
+<summary><strong>📋 View Detail</strong></summary>
 
 **Q: What is the retention period for different data types?**
 - **Prompt data:** Zero retention with Fireworks, OpenAI, Anthropic, Google Cloud Vertex API, and xAI agreements
@@ -347,6 +355,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Copyright claim defense:** No indemnity protection provided
 - **Legal coverage scope:** Full ownership of generated code stated in terms of service, but no legal protection against claims
 
+</details>
+
 ### Claude API (Anthropic)
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
@@ -366,6 +376,9 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 </div>
+
+<details>
+<summary><strong>📋 View Detail</strong></summary>
 
 **Q: What is the retention period for different data types?**
 - **Prompt data:** 30 days default retention, zero retention with API key from zero data retention organization
@@ -388,6 +401,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Copyright claim defense:** Anthropic will defend Customer against third-party intellectual property claims
 - **Legal coverage scope:** Indemnification for paid use of Services and Outputs generated through authorized use
 
+</details>
+
 ### Windsurf
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
@@ -405,6 +420,9 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 </div>
+
+<details>
+<summary><strong>📋 View Detail</strong></summary>
 
 **Q: What is the retention period for different data types?**
 - **Prompt data:** Zero-data retention default for team/enterprise plans, takes minutes to hours to delete
@@ -427,6 +445,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Copyright claim defense:** "You own all of the code generated by Windsurf's products, to the extent permitted by law"
 - **Legal coverage scope:** Full ownership of generated code with legal limitations
 
+</details>
+
 ### Gemini CLI
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
@@ -444,6 +464,9 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 </div>
+
+<details>
+<summary><strong>📋 View Detail</strong></summary>
 
 **Q: What is the retention period for different data types?**
 - **Prompt data:** 18 months for individuals, varies by authentication method and service tier
@@ -466,6 +489,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Copyright claim defense:** "We assume certain responsibility for the potential legal risks involved"
 - **Legal coverage scope:** Indemnification for content generated by Gemini for Google Cloud
 
+</details>
+
 ### Augment Code
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
@@ -483,6 +508,9 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 </div>
+
+<details>
+<summary><strong>📋 View Detail</strong></summary>
 
 **Q: What is the retention period for different data types?**
 - **Prompt data:** Indefinite retention period, retained as long as necessary for service provision
@@ -505,6 +533,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Copyright claim defense:** No indemnity protection provided
 - **Legal coverage scope:** Full ownership of generated code but no legal protection against claims
 
+</details>
+
 ### Replit
 
 <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px; margin: 20px 0; border-radius: 4px;">
@@ -522,6 +552,9 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 </div>
+
+<details>
+<summary><strong>📋 View Detail</strong></summary>
 
 **Q: What is the retention period for different data types?**
 - **Prompt data:** No retention policy, only request deletion available
@@ -543,6 +576,8 @@ This guide answers the key questions developers ask when choosing AI programming
 **Q: What IP-indemnity protection is provided?**
 - **Copyright claim defense:** No indemnity protection provided
 - **Legal coverage scope:** Service used at own risk, no responsibility for loss or damage
+
+</details>
 
 
 
