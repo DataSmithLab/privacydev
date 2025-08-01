@@ -53,7 +53,6 @@ This guide answers the key questions developers ask when choosing AI programming
 | [Gemini CLI](#gemini-cli) | <span class="pg-orange">⚠️ 18 months (individual) / Varies</span> | <span class="pg-orange">⚠️ Training for individuals</span> | <span class="pg-green">✅ .aiexclude support</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With indemnity</span> |
 | [Augment Code](#augment-code) | <span class="pg-red">❌ Indefinite retention</span> | <span class="pg-orange">⚠️ Default training (free tier)</span> | <span class="pg-green">✅ .augmentignore support</span> | <span class="pg-green">✅ Hybrid</span> | <span class="pg-red">❌ No indemnity</span> |
 | [Replit](#replit) | <span class="pg-red">❌ No retention policy</span> | <span class="pg-red">❌ Training for all plans</span> | <span class="pg-red">❌ No credential protection</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-red">❌ No indemnity</span> |
-| [Self-Hosted (Ollama)](#self-hosted-local-first) | <span class="pg-green">✅ Zero retention</span> | <span class="pg-green">✅ No training</span> | <span class="pg-green">✅ Maximum security</span> | <span class="pg-green">✅ Self-hosted</span> | <span class="pg-green">✅ Full control</span> |
 
 
 ### GitHub Copilot
