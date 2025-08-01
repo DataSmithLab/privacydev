@@ -31,7 +31,7 @@ This guide answers the key questions developers ask when choosing AI programming
 
 <div style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 16px; margin: 20px 0; border-radius: 4px;">
 <h4 style="color: #1976d2; margin-top: 0;">🏆 Best Overall: GitHub Copilot</h4>
-<p><strong>Why:</strong> Strong credential protection with user configurable .ignore, IP indemnification, 28 days retention for IDE, and enterprise-ready cloud deployment.</p>
+<p><strong>Why:</strong> Strong credential protection with user configurable exclusion settings, IP indemnification, 28 days retention for IDE, and enterprise-ready cloud deployment.</p>
 </div>
 
 <div style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 16px; margin: 20px 0; border-radius: 4px;">
@@ -46,12 +46,12 @@ This guide answers the key questions developers ask when choosing AI programming
 
 | Provider | Retention Period | Training Usage | Credential Protection | Deployment | IP-Indemnity |
 |---|---|---|---|---|---|
-| [GitHub Copilot](#github-copilot) | <span class="pg-orange">⚠️ 28 days (IDE) / 2 years (engagement)</span> | <span class="pg-green">✅ No training by default</span> | <span class="pg-green">✅ User configurable .ignore</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With IP-indemnity</span> |
+| [GitHub Copilot](#github-copilot) | <span class="pg-orange">⚠️ 28 days (IDE) / 2 years (engagement)</span> | <span class="pg-green">✅ No training by default</span> | <span class="pg-green">✅ User configurable exclusion settings</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With IP-indemnity</span> |
 | [Cursor](#cursor) | <span class="pg-green">✅ Zero retention (privacy mode)</span> | <span class="pg-orange">⚠️ Only exclude in Privacy-Mode</span> | <span class="pg-orange">⚠️ No credential monitoring</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-red">❌ No indemnity</span> |
-| [Claude API](#claude-api-anthropic) | <span class="pg-green">✅ 30 days (default) / Zero (API)</span> | <span class="pg-green">✅ No default training</span> | <span class="pg-red">❌ No configurable .ignore</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With indemnity</span> |
+| [Claude API](#claude-api-anthropic) | <span class="pg-green">✅ 30 days (default) / Zero (API)</span> | <span class="pg-green">✅ No default training</span> | <span class="pg-red">❌ No configurable exclusion settings</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With indemnity</span> |
 | [Windsurf](#windsurf) | <span class="pg-green">✅ Zero retention (team/enterprise)</span> | <span class="pg-orange">⚠️ No training in zero-data mode</span> | <span class="pg-orange">⚠️ Personalized codebases</span> | <span class="pg-green">✅ Hybrid/Cloud Tier</span> | <span class="pg-red">❌ No indemnity</span> |
-| [Gemini CLI](#gemini-cli) | <span class="pg-orange">⚠️ 18 months (individual) / Varies</span> | <span class="pg-orange">⚠️ Training for individuals</span> | <span class="pg-green">✅ .aiexclude support</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With indemnity</span> |
-| [Augment Code](#augment-code) | <span class="pg-red">❌ Indefinite retention</span> | <span class="pg-orange">⚠️ Default training (free tier)</span> | <span class="pg-green">✅ .augmentignore support</span> | <span class="pg-green">✅ Hybrid</span> | <span class="pg-red">❌ No indemnity</span> |
+| [Gemini CLI](#gemini-cli) | <span class="pg-orange">⚠️ 18 months (individual) / Varies</span> | <span class="pg-orange">⚠️ Training for individuals</span> | <span class="pg-green">✅ Built-in exclusion settings</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-green">✅ With indemnity</span> |
+| [Augment Code](#augment-code) | <span class="pg-red">❌ Indefinite retention</span> | <span class="pg-orange">⚠️ Default training (free tier)</span> | <span class="pg-green">✅ .augmentignore exclusion settings</span> | <span class="pg-green">✅ Hybrid</span> | <span class="pg-red">❌ No indemnity</span> |
 | [Replit](#replit) | <span class="pg-red">❌ No retention policy</span> | <span class="pg-red">❌ Training for all plans</span> | <span class="pg-red">❌ No credential protection</span> | <span class="pg-orange">⚠️ Cloud-based only</span> | <span class="pg-red">❌ No indemnity</span> |
 
 
@@ -83,8 +83,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Individual tier:** No training by default, with public code filter and code referencing
 - **Business tier:** No training by default, with user management and data excluded from training
 
-**Q: How does credential protection work with .ignore settings?**
-- **Supported .ignore patterns:** Repository-level content exclusion with path patterns like "secrets.json", "secret*", "*.cfg", "/scripts/***"
+**Q: How does credential protection work with exclusion settings?**
+- **Supported exclusion patterns:** Repository-level content exclusion with path patterns like "secrets.json", "secret*", "*.cfg", "/scripts/***"
 - **Credential confidentiality measures:** User configurable settings for organization and enterprise-wide exclusions
 
 **Q: What deployment options are available?**
@@ -123,8 +123,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Default mode:** Training enabled by default, code data may be stored for inference speed
 - **Privacy mode:** Guaranteed no training on user code, forcibly enabled for team members
 
-**Q: How does credential protection work with .ignore settings?**
-- **Supported .ignore patterns:** No credential data monitoring on any model providers
+**Q: How does credential protection work with exclusion settings?**
+- **Supported exclusion patterns:** No credential data monitoring on any model providers
 - **Credential confidentiality measures:** No Chinese infrastructure involvement, multi-factor authentication for AWS
 
 **Q: What deployment options are available?**
@@ -164,8 +164,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **API usage:** No default training for all tiers, only users opt-in for training purposes
 - **Training policy:** By default, Anthropic does not train generative models using code or prompts sent to Claude Code
 
-**Q: How does credential protection work with .ignore settings?**
-- **Supported .ignore patterns:** No configurable .ignore file settings available
+**Q: How does credential protection work with exclusion settings?**
+- **Supported exclusion patterns:** No configurable exclusion settings available
 - **Credential confidentiality measures:** User responsibility to remove sensitive data before sending
 
 **Q: What deployment options are available?**
@@ -203,8 +203,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Zero-data mode:** User will never be trained on in zero-data mode
 - **Regular mode:** User will only be trained on non-credential data outside zero-data mode
 
-**Q: How does credential protection work with .ignore settings?**
-- **Supported .ignore patterns:** Personalized private codebases appended with model for inference
+**Q: How does credential protection work with exclusion settings?**
+- **Supported exclusion patterns:** Personalized private codebases appended with model for inference
 - **Credential confidentiality measures:** Indexing of private codebases for relevant snippet retrieval
 
 **Q: What deployment options are available?**
@@ -242,8 +242,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Individual tier:** Training enabled by default, collects prompts and code for model improvement
 - **Enterprise tier:** No training on private source code, different policies by authentication method
 
-**Q: How does credential protection work with .ignore settings?**
-- **Supported .ignore patterns:** Default patterns include environment files (/.env, /.env.*), credentials (/.credentials.json, /.secrets.json), and keys (/*.key, /*.pem, /id_rsa)
+**Q: How does credential protection work with exclusion settings?**
+- **Supported exclusion patterns:** Default patterns include environment files (/.env, /.env.*), credentials (/.credentials.json, /.secrets.json), and keys (/*.key, /*.pem, /id_rsa)
 - **Credential confidentiality measures:** Built-in settings to ignore and exclude sensitive files without per-project configuration
 
 **Q: What deployment options are available?**
@@ -281,8 +281,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **Free tier:** Default training enabled, grants rights to use Customer Code and Output for model training
 - **Pro & Enterprise tier:** No training at all, promises Customer Code or Output is never used to train AI models
 
-**Q: How does credential protection work with .ignore settings?**
-- **Supported .ignore patterns:** .augmentignore file support using glob patterns similar to gitignore
+**Q: How does credential protection work with exclusion settings?**
+- **Supported exclusion patterns:** .augmentignore file support using glob patterns similar to gitignore
 - **Credential confidentiality measures:** Create .augmentignore file in workspace root to ignore files during indexing
 
 **Q: What deployment options are available?**
@@ -320,8 +320,8 @@ This guide answers the key questions developers ask when choosing AI programming
 - **All plans:** Training enabled for all plans (Free, Core, Teams)
 - **Public Repls:** Content may be used for improving Service and training large language models
 
-**Q: How does credential protection work with .ignore settings?**
-- **Supported .ignore patterns:** No setting for ignoring credential files
+**Q: How does credential protection work with exclusion settings?**
+- **Supported exclusion patterns:** No setting for ignoring credential files
 - **Credential confidentiality measures:** No responsibility for protecting users' credentials
 
 **Q: What deployment options are available?**
@@ -381,13 +381,13 @@ Default Training option (usually varies by subscription tier).
 </div>
 
 ### 3. Credential Protection
-Credential Confidentiality (.ignore setting).
+Credential Confidentiality (exclusion settings).
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
     <h4>Minimum to Qualify</h4>
     <ul>
-      <li>Support for .gitignore patterns.</li>
+      <li>Support for exclusion settings patterns.</li>
       <li>Basic credential detection and exclusion.</li>
       <li>Secure cloud processing with encryption.</li>
     </ul>
@@ -395,7 +395,7 @@ Credential Confidentiality (.ignore setting).
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li><strong>Advanced .ignore support</strong> - multiple patterns.</li>
+      <li><strong>Advanced exclusion settings support</strong> - multiple patterns.</li>
       <li>Built-in secret detection and exclusion.</li>
       <li>Local processing only - no external exposure.</li>
     </ul>
