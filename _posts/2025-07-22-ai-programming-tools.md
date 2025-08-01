@@ -197,7 +197,6 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 
 ### 5. IP-Indemnity
-Defend against copyright claims from others.
 
 **Threat:** An AI code generation tool, trained on a diverse corpus of public repositories, produces code that is a derivative work of a project governed by a restrictive copyleft license (e.g., GPL). If this generated code is integrated into a proprietary commercial product, it can cause license contamination of the entire codebase. This may legally obligate the company to release its proprietary source code under the terms of the original copyleft license, creating a significant intellectual property risk.
 
