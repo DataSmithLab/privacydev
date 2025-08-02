@@ -20,9 +20,9 @@ tags: [ai-programming]
 
 ### 1. Credential Protection
 
-**Threat:** A developer submits code with a hardcoded credential to an AI assistant. The secret is then absorbed into the model's training data, creating a risk that an attacker could extract it via prompt injection, leading to a service breach.
+**Threat:** AI assistant's model potentially collect and scan the code that contains hardcoded credentials even users do not include in the prompt. The secret is then used in the model's training data, creating a risk that an attacker could extract it via prompt injection, leading to a service breach.
 
-<button class="collapsible"><strong>FAQ 1: Are `.gitignore` or `.env` files sufficient for protection?</strong></button>
+<button class="collapsible"><strong>FAQ 1: Are `.gitignore` and `.env` files sufficient for protection?</strong></button>
 <div class="content">
 <p>No, these files only manage version control and do not stop an AI tool from reading an open file in your IDE.</p>
 </div>
@@ -185,47 +185,44 @@ tags: [ai-programming]
   </div>
 </div>
 
+
 ### 5. Training Usage
 
-**Threat:** AI providers often use data from free tiers to train their public models. This means your proprietary code can be absorbed by the model and potentially leaked or used to benefit competitors.
+**Threat:** When an AI provider uses your code for model training, your intellectual property is ingested into a shared resource. The primary threat is that the model may memorize and reproduce your proprietary algorithms or business logic for other users, including competitors. This effectively leaks trade secrets and gives your rivals an advantage by training the model on your innovations.
 
 <button class="collapsible"><strong>FAQ 1: How can I confirm if my code is used for training public models?</strong></button>
 <div class="content">
 <p>Read the provider's Terms of Service, as paid enterprise tiers usually guarantee your data is not used for training.</p>
 </div>
-
 <button class="collapsible"><strong>FAQ 2: Is opting out of training data usage the default setting?</strong></button>
 <div class="content">
 <p>No, data usage for training is often the default on free tiers, and upgrading to a paid plan is the only way to opt out.</p>
 </div>
-
 <button class="collapsible"><strong>FAQ 3: If we upgrade, will our past data from the free tier be protected?</strong></button>
 <div class="content">
 <p>Data submitted on a free plan may have already been ingested, and a provider is unlikely to retroactively remove it.</p>
 </div>
-
 <button class="collapsible"><strong>FAQ 4: Can a model reproduce my exact code after training?</strong></button>
 <div class="content">
 <p>Yes, models can memorize and reproduce specific data, creating a risk that your proprietary code could be leaked to others.</p>
 </div>
-
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
-  <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
-    <h4>Minimum to Qualify</h4>
-    <ul>
-      <li>Clear opt-out for model training.</li>
-      <li>Paid tiers default to no training.</li>
-      <li>Policy is clear in Terms of Service.</li>
-    </ul>
-  </div>
-  <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
-    <h4>Best Case</h4>
-    <ul>
-      <li><strong>No training on user data by default.</strong></li>
-      <li>Explicit contractual guarantee.</li>
-      <li>Data is never used for any training.</li>
-    </ul>
-  </div>
+<div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
+<h4>Minimum to Qualify</h4>
+<ul>
+<li>Clear opt-out for model training.</li>
+<li>Paid tiers default to no training.</li>
+<li>Policy is clear in Terms of Service.</li>
+</ul>
+</div>
+<div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
+<h4>Best Case</h4>
+<ul>
+<li><strong>No training on user data by default.</strong></li>
+<li>Explicit contractual guarantee.</li>
+<li>Data is never used for any training.</li>
+</ul>
+</div>
 </div>
 
 ## Quick Comparison: Which Tool is Best?
