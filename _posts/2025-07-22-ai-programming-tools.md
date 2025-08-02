@@ -16,7 +16,7 @@ tags: [ai-programming]
 
 ## Criteria: How We Evaluate Tools
 
-We evaluate tools based on the five key dimensions that matter most to developers. In this context, a "**threat**" refers to specific risks that could compromise your intellectual property, credentials, or compliance when using AI programming tools.
+We evaluate tools based on the five key dimensions that matter most to developers. In this context, a 'threat' refers to specific risks that could compromise your intellectual property, credentials, or compliance when using AI programming tools - including credential exposure, license contamination, data retention risks, regulatory violations, and competitive intelligence leakage.
 
 ### 1. Credential Protection
 
