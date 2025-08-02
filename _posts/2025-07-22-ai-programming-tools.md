@@ -33,21 +33,25 @@ This guide answers the key questions developers ask when choosing AI programming
 
 **Threat:** A developer submits code with a hardcoded credential to an AI assistant. The secret is then absorbed into the model's training data, creating a risk that an attacker could extract it via prompt injection, leading to a service breach.
 
-{% details "FAQ 1: Are `.gitignore` or `.env` files sufficient for protection?" %}
+<button class="collapsible"><strong>FAQ 1: Are `.gitignore` or `.env` files sufficient for protection?</strong></button>
+<div class="content">
 <p>No, these files only manage version control and do not stop an AI tool from reading an open file in your IDE.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 2: What is the immediate action after submitting a secret?" %}
+<button class="collapsible"><strong>FAQ 2: What is the immediate action after submitting a secret?</strong></button>
+<div class="content">
 <p>You must rotate the compromised credential by revoking the old one and issuing a new one immediately.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 3: Are there AI tools that run locally to prevent this risk?" %}
+<button class="collapsible"><strong>FAQ 3: Are there AI tools that run locally to prevent this risk?</strong></button>
+<div class="content">
 <p>Yes, on-device tools like Ollama or LM Studio run models locally so your code never leaves your machine.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 4: How can I make an AI tool ignore specific files?" %}
+<button class="collapsible"><strong>FAQ 4: How can I make an AI tool ignore specific files?</strong></button>
+<div class="content">
 <p>Use a configuration file like <code>.aiexclude</code> to specify paths for the AI assistant to ignore.</p>
-{% enddetails %}
+</div>
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
@@ -72,21 +76,25 @@ This guide answers the key questions developers ask when choosing AI programming
 
 **Threat:** An AI tool generates code derived from a copyleft-licensed project. Integrating this into a proprietary product can cause license contamination, legally requiring the company to open-source its code and creating IP risk.
 
-{% details "FAQ 1: What is 'IP Indemnity' and does it cover legal costs?" %}
+<button class="collapsible"><strong>FAQ 1: What is 'IP Indemnity' and does it cover legal costs?</strong></button>
+<div class="content">
 <p>IP Indemnity is a provider's promise to defend you against copyright lawsuits from using their code, though specific terms and limits apply.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 2: How can I detect if AI code is derived from a copyleft project?" %}
+<button class="collapsible"><strong>FAQ 2: How can I detect if AI code is derived from a copyleft project?</strong></button>
+<div class="content">
 <p>It is very difficult, as AI filters that block matches to public code are imperfect and can miss functionally identical code.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 3: Should developers be blocked from using AI coding tools?" %}
+<button class="collapsible"><strong>FAQ 3: Should developers be blocked from using AI coding tools?</strong></button>
+<div class="content">
 <p>Not necessarily; a safer approach is using tools from providers that offer IP indemnity to transfer the legal risk.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 4: Are there tools to scan AI code for license violations?" %}
+<button class="collapsible"><strong>FAQ 4: Are there tools to scan AI code for license violations?</strong></button>
+<div class="content">
 <p>Yes, Software Composition Analysis (SCA) tools like Snyk or Black Duck can scan for licensed code and flag conflicts.</p>
-{% enddetails %}
+</div>
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
@@ -111,21 +119,25 @@ This guide answers the key questions developers ask when choosing AI programming
 
 **Threat:** Proprietary code submitted to an AI service with a long data retention policy is stored on the provider's servers, creating a risk of intellectual property exposure in the event of a data breach.
 
-{% details "FAQ 1: How do I prevent long-term storage of my code on provider servers?" %}
+<button class="collapsible"><strong>FAQ 1: How do I prevent long-term storage of my code on provider servers?</strong></button>
+<div class="content">
 <p>Select a provider or plan with a "zero-data retention" policy to ensure prompts are not stored after processing.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 2: What does a "zero-data retention" policy guarantee?" %}
+<button class="collapsible"><strong>FAQ 2: What does a "zero-data retention" policy guarantee?</strong></button>
+<div class="content">
 <p>It guarantees the provider deletes your prompts and code after processing, offering the most secure option.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 3: How do I manage risk if a 30-day retention policy is unavoidable?" %}
+<button class="collapsible"><strong>FAQ 3: How do I manage risk if a 30-day retention policy is unavoidable?</strong></button>
+<div class="content">
 <p>You must accept the exposure risk during that window and trust the provider's documented security and deletion processes.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 4: What are the alternatives to avoid sending data to a third party?" %}
+<button class="collapsible"><strong>FAQ 4: What are the alternatives to avoid sending data to a third party?</strong></button>
+<div class="content">
 <p>Use self-hosted or on-premise AI models to keep proprietary code within your own infrastructure.</p>
-{% enddetails %}
+</div>
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
@@ -150,17 +162,20 @@ This guide answers the key questions developers ask when choosing AI programming
 
 **Threat:** Using a cloud AI service can violate data residency rules (e.g., GDPR) if code is processed in a non-compliant geographic region, creating a risk of legal and financial penalties for the organization.
 
-{% details "FAQ 1: How do I find where a cloud AI tool processes my code?" %}
+<button class="collapsible"><strong>FAQ 1: How do I find where a cloud AI tool processes my code?</strong></button>
+<div class="content">
 <p>Enterprise providers specify data processing regions in their security documentation or terms of service.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 2: Are there performant self-hosted AI coding assistants?" %}
+<button class="collapsible"><strong>FAQ 2: Are there performant self-hosted AI coding assistants?</strong></button>
+<div class="content">
 <p>Yes, you can self-host open-source models or use enterprise solutions that offer on-premise deployment options.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 3: How does a 'hybrid' deployment model help compliance?" %}
+<button class="collapsible"><strong>FAQ 3: How does a 'hybrid' deployment model help compliance?</strong></button>
+<div class="content">
 <p>A hybrid model keeps sensitive data on your infrastructure while sending only sanitized, non-sensitive data to the cloud.</p>
-{% enddetails %}
+</div>
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
@@ -185,21 +200,25 @@ This guide answers the key questions developers ask when choosing AI programming
 
 **Threat:** AI providers often use data from free tiers to train their public models. This means your proprietary code can be absorbed by the model and potentially leaked or used to benefit competitors.
 
-{% details "FAQ 1: How can I confirm if my code is used for training public models?" %}
+<button class="collapsible"><strong>FAQ 1: How can I confirm if my code is used for training public models?</strong></button>
+<div class="content">
 <p>Read the provider's Terms of Service, as paid enterprise tiers usually guarantee your data is not used for training.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 2: Is opting out of training data usage the default setting?" %}
+<button class="collapsible"><strong>FAQ 2: Is opting out of training data usage the default setting?</strong></button>
+<div class="content">
 <p>No, data usage for training is often the default on free tiers, and upgrading to a paid plan is the only way to opt out.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 3: If we upgrade, will our past data from the free tier be protected?" %}
+<button class="collapsible"><strong>FAQ 3: If we upgrade, will our past data from the free tier be protected?</strong></button>
+<div class="content">
 <p>Data submitted on a free plan may have already been ingested, and a provider is unlikely to retroactively remove it.</p>
-{% enddetails %}
+</div>
 
-{% details "FAQ 4: Can a model reproduce my exact code after training?" %}
+<button class="collapsible"><strong>FAQ 4: Can a model reproduce my exact code after training?</strong></button>
+<div class="content">
 <p>Yes, models can memorize and reproduce specific data, creating a risk that your proprietary code could be leaked to others.</p>
-{% enddetails %}
+</div>
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
   <div style="flex: 1; padding: 15px; background-color: #f5f5f5;">
@@ -267,30 +286,41 @@ This guide answers the key questions developers ask when choosing AI programming
   </div>
 </div>
 
-{% details "📋 View Detail" %}
+<button class="collapsible"><strong>📋 View Detail</strong></button>
+<div class="content">
 
-**Q: What is the retention period for different data types?**
-- **Prompt data:** 28 days for IDE access, not retained for other access methods
-- **Engagement data:** Kept for two years for service improvement and abuse detection
-- **Feedback data:** Stored for as long as needed for intended purpose
+<p><strong>Q: What is the retention period for different data types?</strong></p>
+<ul>
+<li><strong>Prompt data:</strong> 28 days for IDE access, not retained for other access methods</li>
+<li><strong>Engagement data:</strong> Kept for two years for service improvement and abuse detection</li>
+<li><strong>Feedback data:</strong> Stored for as long as needed for intended purpose</li>
+</ul>
 
-**Q: What is the default training option?**
-- **Individual tier:** No training by default, with public code filter and code referencing
-- **Business tier:** No training by default, with user management and data excluded from training
+<p><strong>Q: What is the default training option?</strong></p>
+<ul>
+<li><strong>Individual tier:</strong> No training by default, with public code filter and code referencing</li>
+<li><strong>Business tier:</strong> No training by default, with user management and data excluded from training</li>
+</ul>
 
-**Q: How does credential protection work with exclusion settings?**
-- **Supported exclusion patterns:** Repository-level content exclusion with path patterns like "secrets.json", "secret*", "*.cfg", "/scripts/***"
-- **Credential confidentiality measures:** User configurable settings for organization and enterprise-wide exclusions
+<p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
+<ul>
+<li><strong>Supported exclusion patterns:</strong> Repository-level content exclusion with path patterns like "secrets.json", "secret*", "*.cfg", "/scripts/***"</li>
+<li><strong>Credential confidentiality measures:</strong> User configurable settings for organization and enterprise-wide exclusions</li>
+</ul>
 
-**Q: What deployment options are available?**
-- **Deployment type:** Cloud-based only, no self-hosting option
-- **Infrastructure requirements:** Microsoft Azure servers for all processing
+<p><strong>Q: What deployment options are available?</strong></p>
+<ul>
+<li><strong>Deployment type:</strong> Cloud-based only, no self-hosting option</li>
+<li><strong>Infrastructure requirements:</strong> Microsoft Azure servers for all processing</li>
+</ul>
 
-**Q: What IP-indemnity protection is provided?**
-- **Copyright claim defense:** IP indemnification when Copilot filtering is enabled (ON by default)
-- **Legal coverage scope:** GitHub and Microsoft extend IP indemnity and protection support to customers
+<p><strong>Q: What IP-indemnity protection is provided?</strong></p>
+<ul>
+<li><strong>Copyright claim defense:</strong> IP indemnification when Copilot filtering is enabled (ON by default)</li>
+<li><strong>Legal coverage scope:</strong> GitHub and Microsoft extend IP indemnity and protection support to customers</li>
+</ul>
 
-{% enddetails %}
+</div>
 
 ### Cursor
 
@@ -311,30 +341,41 @@ This guide answers the key questions developers ask when choosing AI programming
 
 </div>
 
-{% details "📋 View Detail" %}
+<button class="collapsible"><strong>📋 View Detail</strong></button>
+<div class="content">
 
-**Q: What is the retention period for different data types?**
-- **Prompt data:** Zero retention with Fireworks, OpenAI, Anthropic, Google Cloud Vertex API, and xAI agreements
-- **Engagement data:** Zero retention across all infrastructure providers
-- **Feedback data:** Zero retention, no data stored by model providers
+<p><strong>Q: What is the retention period for different data types?</strong></p>
+<ul>
+<li><strong>Prompt data:</strong> Zero retention with Fireworks, OpenAI, Anthropic, Google Cloud Vertex API, and xAI agreements</li>
+<li><strong>Engagement data:</strong> Zero retention across all infrastructure providers</li>
+<li><strong>Feedback data:</strong> Zero retention, no data stored by model providers</li>
+</ul>
 
-**Q: What is the default training option?**
-- **Default mode:** Training enabled by default, code data may be stored for inference speed
-- **Privacy mode:** Guaranteed no training on user code, forcibly enabled for team members
+<p><strong>Q: What is the default training option?</strong></p>
+<ul>
+<li><strong>Default mode:</strong> Training enabled by default, code data may be stored for inference speed</li>
+<li><strong>Privacy mode:</strong> Guaranteed no training on user code, forcibly enabled for team members</li>
+</ul>
 
-**Q: How does credential protection work with exclusion settings?**
-- **Supported exclusion patterns:** No credential data monitoring on any model providers
-- **Credential confidentiality measures:** No Chinese infrastructure involvement, multi-factor authentication for AWS
+<p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
+<ul>
+<li><strong>Supported exclusion patterns:</strong> No credential data monitoring on any model providers</li>
+<li><strong>Credential confidentiality measures:</strong> No Chinese infrastructure involvement, multi-factor authentication for AWS</li>
+</ul>
 
-**Q: What deployment options are available?**
-- **Deployment type:** Cloud-based only, no self-hosting option
-- **Infrastructure requirements:** Third-party servers (Fireworks, OpenAI, Anthropic, Google Cloud, xAI)
+<p><strong>Q: What deployment options are available?</strong></p>
+<ul>
+<li><strong>Deployment type:</strong> Cloud-based only, no self-hosting option</li>
+<li><strong>Infrastructure requirements:</strong> Third-party servers (Fireworks, OpenAI, Anthropic, Google Cloud, xAI)</li>
+</ul>
 
-**Q: What IP-indemnity protection is provided?**
-- **Copyright claim defense:** No indemnity protection provided
-- **Legal coverage scope:** Full ownership of generated code stated in terms of service, but no legal protection against claims
+<p><strong>Q: What IP-indemnity protection is provided?</strong></p>
+<ul>
+<li><strong>Copyright claim defense:</strong> No indemnity protection provided</li>
+<li><strong>Legal coverage scope:</strong> Full ownership of generated code stated in terms of service, but no legal protection against claims</li>
+</ul>
 
-{% enddetails %}
+</div>
 
 ### Claude API (Anthropic)
 
@@ -356,30 +397,41 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 
-{% details "📋 View Detail" %}
+<button class="collapsible"><strong>📋 View Detail</strong></button>
+<div class="content">
 
-**Q: What is the retention period for different data types?**
-- **Prompt data:** 30 days default retention, zero retention with API key from zero data retention organization
-- **Engagement data:** Conversation history removed immediately, automatically deleted after 30 days upon request
-- **Feedback data:** Local storage up to 30 days for session resumption, configurable behavior
+<p><strong>Q: What is the retention period for different data types?</strong></p>
+<ul>
+<li><strong>Prompt data:</strong> 30 days default retention, zero retention with API key from zero data retention organization</li>
+<li><strong>Engagement data:</strong> Conversation history removed immediately, automatically deleted after 30 days upon request</li>
+<li><strong>Feedback data:</strong> Local storage up to 30 days for session resumption, configurable behavior</li>
+</ul>
 
-**Q: What is the default training option?**
-- **API usage:** No default training for all tiers, only users opt-in for training purposes
-- **Training policy:** By default, Anthropic does not train generative models using code or prompts sent to Claude Code
+<p><strong>Q: What is the default training option?</strong></p>
+<ul>
+<li><strong>API usage:</strong> No default training for all tiers, only users opt-in for training purposes</li>
+<li><strong>Training policy:</strong> By default, Anthropic does not train generative models using code or prompts sent to Claude Code</li>
+</ul>
 
-**Q: How does credential protection work with exclusion settings?**
-- **Supported exclusion patterns:** No configurable exclusion settings available
-- **Credential confidentiality measures:** User responsibility to remove sensitive data before sending
+<p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
+<ul>
+<li><strong>Supported exclusion patterns:</strong> No configurable exclusion settings available</li>
+<li><strong>Credential confidentiality measures:</strong> User responsibility to remove sensitive data before sending</li>
+</ul>
 
-**Q: What deployment options are available?**
-- **Deployment type:** Cloud-based only, supported across multiple regions
-- **Infrastructure requirements:** API key authentication, prompt caching enabled by default
+<p><strong>Q: What deployment options are available?</strong></p>
+<ul>
+<li><strong>Deployment type:</strong> Cloud-based only, supported across multiple regions</li>
+<li><strong>Infrastructure requirements:</strong> API key authentication, prompt caching enabled by default</li>
+</ul>
 
-**Q: What IP-indemnity protection is provided?**
-- **Copyright claim defense:** Anthropic will defend Customer against third-party intellectual property claims
-- **Legal coverage scope:** Indemnification for paid use of Services and Outputs generated through authorized use
+<p><strong>Q: What IP-indemnity protection is provided?</strong></p>
+<ul>
+<li><strong>Copyright claim defense:</strong> Anthropic will defend Customer against third-party intellectual property claims</li>
+<li><strong>Legal coverage scope:</strong> Indemnification for paid use of Services and Outputs generated through authorized use</li>
+</ul>
 
-{% enddetails %}
+</div>
 
 ### Windsurf
 
@@ -399,30 +451,41 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 
-{% details "📋 View Detail" %}
+<button class="collapsible"><strong>📋 View Detail</strong></button>
+<div class="content">
 
-**Q: What is the retention period for different data types?**
-- **Prompt data:** Zero-data retention default for team/enterprise plans, takes minutes to hours to delete
-- **Engagement data:** Only profile data stored while using cloud implementations for authentication
-- **Feedback data:** Flagged input stored for potential violations of Acceptable Use Policy
+<p><strong>Q: What is the retention period for different data types?</strong></p>
+<ul>
+<li><strong>Prompt data:</strong> Zero-data retention default for team/enterprise plans, takes minutes to hours to delete</li>
+<li><strong>Engagement data:</strong> Only profile data stored while using cloud implementations for authentication</li>
+<li><strong>Feedback data:</strong> Flagged input stored for potential violations of Acceptable Use Policy</li>
+</ul>
 
-**Q: What is the default training option?**
-- **Zero-data mode:** User will never be trained on in zero-data mode
-- **Regular mode:** User will only be trained on non-credential data outside zero-data mode
+<p><strong>Q: What is the default training option?</strong></p>
+<ul>
+<li><strong>Zero-data mode:</strong> User will never be trained on in zero-data mode</li>
+<li><strong>Regular mode:</strong> User will only be trained on non-credential data outside zero-data mode</li>
+</ul>
 
-**Q: How does credential protection work with exclusion settings?**
-- **Supported exclusion patterns:** Personalized private codebases appended with model for inference
-- **Credential confidentiality measures:** Indexing of private codebases for relevant snippet retrieval
+<p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
+<ul>
+<li><strong>Supported exclusion patterns:</strong> Personalized private codebases appended with model for inference</li>
+<li><strong>Credential confidentiality measures:</strong> Indexing of private codebases for relevant snippet retrieval</li>
+</ul>
 
-**Q: What deployment options are available?**
-- **Deployment type:** Hybrid/Cloud Tier deployment options available
-- **Infrastructure requirements:** Cloud-based with team and enterprise plan options
+<p><strong>Q: What deployment options are available?</strong></p>
+<ul>
+<li><strong>Deployment type:</strong> Hybrid/Cloud Tier deployment options available</li>
+<li><strong>Infrastructure requirements:</strong> Cloud-based with team and enterprise plan options</li>
+</ul>
 
-**Q: What IP-indemnity protection is provided?**
-- **Copyright claim defense:** "You own all of the code generated by Windsurf's products, to the extent permitted by law"
-- **Legal coverage scope:** Full ownership of generated code with legal limitations
+<p><strong>Q: What IP-indemnity protection is provided?</strong></p>
+<ul>
+<li><strong>Copyright claim defense:</strong> "You own all of the code generated by Windsurf's products, to the extent permitted by law"</li>
+<li><strong>Legal coverage scope:</strong> Full ownership of generated code with legal limitations</li>
+</ul>
 
-{% enddetails %}
+</div>
 
 ### Gemini CLI
 
@@ -442,30 +505,41 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 
-{% details "📋 View Detail" %}
+<button class="collapsible"><strong>📋 View Detail</strong></button>
+<div class="content">
 
-**Q: What is the retention period for different data types?**
-- **Prompt data:** 18 months for individuals, varies by authentication method and service tier
-- **Engagement data:** Different retention policies for Individual, Standard/Enterprise, and Developer API tiers
-- **Feedback data:** Human reviewers may read, annotate, and process data for quality improvement
+<p><strong>Q: What is the retention period for different data types?</strong></p>
+<ul>
+<li><strong>Prompt data:</strong> 18 months for individuals, varies by authentication method and service tier</li>
+<li><strong>Engagement data:</strong> Different retention policies for Individual, Standard/Enterprise, and Developer API tiers</li>
+<li><strong>Feedback data:</strong> Human reviewers may read, annotate, and process data for quality improvement</li>
+</ul>
 
-**Q: What is the default training option?**
-- **Individual tier:** Training enabled by default, collects prompts and code for model improvement
-- **Enterprise tier:** No training on private source code, different policies by authentication method
+<p><strong>Q: What is the default training option?</strong></p>
+<ul>
+<li><strong>Individual tier:</strong> Training enabled by default, collects prompts and code for model improvement</li>
+<li><strong>Enterprise tier:</strong> No training on private source code, different policies by authentication method</li>
+</ul>
 
-**Q: How does credential protection work with exclusion settings?**
-- **Supported exclusion patterns:** Default patterns include environment files (/.env, /.env.*), credentials (/.credentials.json, /.secrets.json), and keys (/*.key, /*.pem, /id_rsa)
-- **Credential confidentiality measures:** Built-in settings to ignore and exclude sensitive files without per-project configuration
+<p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
+<ul>
+<li><strong>Supported exclusion patterns:</strong> Default patterns include environment files (/.env, /.env.*), credentials (/.credentials.json, /.secrets.json), and keys (/*.key, /*.pem, /id_rsa)</li>
+<li><strong>Credential confidentiality measures:</strong> Built-in settings to ignore and exclude sensitive files without per-project configuration</li>
+</ul>
 
-**Q: What deployment options are available?**
-- **Deployment type:** Cloud-based only with multiple third-party service integrations
-- **Infrastructure requirements:** GitHub, GitLab, Google Docs, Sentry, Atlassian Rovo, MongoDB integrations
+<p><strong>Q: What deployment options are available?</strong></p>
+<ul>
+<li><strong>Deployment type:</strong> Cloud-based only with multiple third-party service integrations</li>
+<li><strong>Infrastructure requirements:</strong> GitHub, GitLab, Google Docs, Sentry, Atlassian Rovo, MongoDB integrations</li>
+</ul>
 
-**Q: What IP-indemnity protection is provided?**
-- **Copyright claim defense:** "We assume certain responsibility for the potential legal risks involved"
-- **Legal coverage scope:** Indemnification for content generated by Gemini for Google Cloud
+<p><strong>Q: What IP-indemnity protection is provided?</strong></p>
+<ul>
+<li><strong>Copyright claim defense:</strong> "We assume certain responsibility for the potential legal risks involved"</li>
+<li><strong>Legal coverage scope:</strong> Indemnification for content generated by Gemini for Google Cloud</li>
+</ul>
 
-{% enddetails %}
+</div>
 
 ### Augment Code
 
@@ -485,30 +559,40 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 
-{% details "📋 View Detail" %}
+<button class="collapsible"><strong>📋 View Detail</strong></button>
+<div class="content">
 
-**Q: What is the retention period for different data types?**
-- **Prompt data:** Indefinite retention period, retained as long as necessary for service provision
-- **Engagement data:** Varies depending on nature of data and collection purpose
-- **Feedback data:** Securely deleted or anonymized after applicable retention period
+<p><strong>Q: What is the retention period for different data types?</strong></p>
+<ul>
+<li><strong>Prompt data:</strong> Indefinite retention period, retained as long as necessary for service provision</li>
+<li><strong>Engagement data:</strong> Varies depending on nature of data and collection purpose</li>
+<li><strong>Feedback data:</strong> Securely deleted or anonymized after applicable retention period</li>
+</ul>
 
-**Q: What is the default training option?**
-- **Free tier:** Default training enabled, grants rights to use Customer Code and Output for model training
-- **Pro & Enterprise tier:** No training at all, promises Customer Code or Output is never used to train AI models
+<p><strong>Q: What is the default training option?</strong></p>
+<ul>
+<li><strong>Free tier:</strong> Default training enabled, grants rights to use Customer Code and Output for model training</li>
+<li><strong>Pro & Enterprise tier:</strong> No training at all, promises Customer Code or Output is never used to train AI models</li>
+</ul>
 
-**Q: How does credential protection work with exclusion settings?**
-- **Supported exclusion patterns:** .augmentignore file support using glob patterns similar to gitignore
-- **Credential confidentiality measures:** Create .augmentignore file in workspace root to ignore files during indexing
+<p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
+<ul>
+<li><strong>Supported exclusion patterns:</strong> .augmentignore file support using glob patterns similar to gitignore</li>
+<li><strong>Credential confidentiality measures:</strong> Create .augmentignore file in workspace root to ignore files during indexing</li>
+</ul>
 
-**Q: What deployment options are available?**
-- **Deployment type:** Hybrid deployment with Remote Agent (cloud) and Agent (IDE-bound) options
-- **Infrastructure requirements:** Each Remote Agent runs on secure environment with independent workspace management
+<p><strong>Q: What deployment options are available?</strong></p>
+<ul>
+<li><strong>Deployment type:</strong> Hybrid deployment with Remote Agent (cloud) and Agent (IDE-bound) options</li>
+<li><strong>Infrastructure requirements:</strong> Each Remote Agent runs on secure environment with independent workspace management</li>
+</ul>
 
-**Q: What IP-indemnity protection is provided?**
-- **Copyright claim defense:** No indemnity protection provided
-- **Legal coverage scope:** Full ownership of generated code but no legal protection against claims
+<p><strong>Q: What IP-indemnity protection is provided?</strong></p>
+<ul>
+<li><strong>Copyright claim defense:</strong> No indemnity protection provided</li>
+<li><strong>Legal coverage scope:</strong> Full ownership of generated code but no legal protection against claims</li>
 
-{% enddetails %}
+</div>
 
 ### Replit
 
@@ -528,30 +612,41 @@ This guide answers the key questions developers ask when choosing AI programming
 </div>
 </div>
 
-{% details "📋 View Detail" %}
+<button class="collapsible"><strong>📋 View Detail</strong></button>
+<div class="content">
 
-**Q: What is the retention period for different data types?**
-- **Prompt data:** No retention policy, only request deletion available
-- **Engagement data:** Inactive accounts terminated after 1-year period, associated data deleted
-- **Feedback data:** Replit Apps associated with inactive free accounts are deleted
+<p><strong>Q: What is the retention period for different data types?</strong></p>
+<ul>
+<li><strong>Prompt data:</strong> No retention policy, only request deletion available</li>
+<li><strong>Engagement data:</strong> Inactive accounts terminated after 1-year period, associated data deleted</li>
+<li><strong>Feedback data:</strong> Replit Apps associated with inactive free accounts are deleted</li>
+</ul>
 
-**Q: What is the default training option?**
-- **All plans:** Training enabled for all plans (Free, Core, Teams)
-- **Public Repls:** Content may be used for improving Service and training large language models
+<p><strong>Q: What is the default training option?</strong></p>
+<ul>
+<li><strong>All plans:</strong> Training enabled for all plans (Free, Core, Teams)</li>
+<li><strong>Public Repls:</strong> Content may be used for improving Service and training large language models</li>
+</ul>
 
-**Q: How does credential protection work with exclusion settings?**
-- **Supported exclusion patterns:** No setting for ignoring credential files
-- **Credential confidentiality measures:** No responsibility for protecting users' credentials
+<p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
+<ul>
+<li><strong>Supported exclusion patterns:</strong> No setting for ignoring credential files</li>
+<li><strong>Credential confidentiality measures:</strong> No responsibility for protecting users' credentials</li>
+</ul>
 
-**Q: What deployment options are available?**
-- **Deployment type:** Cloud-based only, no self-hosting option
-- **Infrastructure requirements:** Cloud platform with limited privacy controls
+<p><strong>Q: What deployment options are available?</strong></p>
+<ul>
+<li><strong>Deployment type:</strong> Cloud-based only, no self-hosting option</li>
+<li><strong>Infrastructure requirements:</strong> Cloud platform with limited privacy controls</li>
+</ul>
 
-**Q: What IP-indemnity protection is provided?**
-- **Copyright claim defense:** No indemnity protection provided
-- **Legal coverage scope:** Service used at own risk, no responsibility for loss or damage
+<p><strong>Q: What IP-indemnity protection is provided?</strong></p>
+<ul>
+<li><strong>Copyright claim defense:</strong> No indemnity protection provided</li>
+<li><strong>Legal coverage scope:</strong> Service used at own risk, no responsibility for loss or damage</li>
+</ul>
 
-{% enddetails %}
+</div>
 
 
 
