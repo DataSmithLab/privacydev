@@ -16,7 +16,7 @@ tags: [ai-programming]
 
 ## Criteria: How We Evaluate Tools
 
-**Please note we are not affiliated with any of the providers we recommend.** We evaluate tools based on the five key dimensions that matter most to developers.
+We evaluate tools based on the five key dimensions that matter most to developers. In this context, a "**threat**" refers to specific risks that could compromise your intellectual property, credentials, or compliance when using AI programming tools.
 
 ### 1. Credential Protection
 
@@ -560,6 +560,7 @@ tags: [ai-programming]
 <ul>
 <li><strong>Copyright claim defense:</strong> No indemnity protection provided</li>
 <li><strong>Legal coverage scope:</strong> Full ownership of generated code but no legal protection against claims</li>
+</ul>
 
 </div>
 
@@ -617,7 +618,9 @@ tags: [ai-programming]
 
 </div>
 
+---
 
+**Please note we are not affiliated with any of the providers we recommend.** We evaluate tools based on the five key dimensions that matter most to developers. 
 
 <!-- ---
 layout: post
