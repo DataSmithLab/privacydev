@@ -504,9 +504,9 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <img src="https://images.seeklogo.com/logo-png/45/1/replit-logo-png_seeklogo-453823.png" alt="Replit logo" width="128">
 </div>
 <div style="float: left; margin-left: 15px;">
-<div style="color: #666; font-size: 14px; margin-bottom: 5px;">Best cloud-based AI coding platform</div>
+<div style="color: #e74c3c; font-size: 14px; margin-bottom: 5px;">⚠️ HIGH RISK - Training enabled for all plans</div>
 <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://replit.com" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Replit</a></div>
-<div style="color: #666; font-size: 14px;">Cloud-based coding with AI integration</div>
+<div style="color: #e74c3c; font-size: 14px;">No credential protection or data retention policy</div>
 </div>
 </div>
 
