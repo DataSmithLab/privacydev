@@ -30,24 +30,16 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 **Threat:** AI assistant's model potentially collect and scan the code that contains hardcoded credentials even users do not include in the prompt. The secret is then used in the model's training data, creating a risk that an attacker could extract it via prompt injection, leading to a service breach.
 
+**Solutions:**
+
 <button class="collapsible"><strong> Are `.gitignore` and `.env` files sufficient for protection?</strong></button>
 <div class="content">
   <p>No, these files only manage version control and do not stop an AI tool from reading an open file in your IDE.</p>
   </div>  
 
-<button class="collapsible"><strong> What is the immediate action after submitting a secret?</strong></button>
-<div class="content">
-<p>You must rotate the compromised credential by revoking the old one and issuing a new one immediately.</p>
-</div>
-
-<button class="collapsible"><strong> Are there AI tools that run locally to prevent this risk?</strong></button>
-<div class="content">
-<p>Yes, on-device tools like Ollama or LM Studio run models locally so your code never leaves your machine.</p>
-</div>
-
 <button class="collapsible"><strong> How can I make an AI tool ignore specific files?</strong></button>
 <div class="content">
-<p>Use a configuration file like <code>.aiexclude</code> to specify paths for the AI assistant to ignore.</p>
+<p>Use a configuration file like <code><a href="https://cloud.google.com/gemini/docs/codeassist/create-aiexclude-file" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">.aiexclude</a></code>, if available, to specify paths for the AI assistant to ignore.</p>
 </div>
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
@@ -55,14 +47,13 @@ We have thoroughly compared the dense privacy policies of today’s most popular
     <h4>Minimum to Qualify</h4>
     <ul>
       <li>Supports exclusion patterns.</li>
-      <li>Detects and excludes credentials.</li>
       <li>Encrypted cloud processing.</li>
     </ul>
   </div>
   <div style="flex: 1; padding: 15px; background-color: #f9f9f9;">
     <h4>Best Case</h4>
     <ul>
-      <li><strong>Advanced exclusion patterns.</strong></li>
+      <li><strong>Default exclusion patterns.</strong></li>
       <li>Automated secret detection and blocking.</li>
       <li>Local-only processing.</li>
     </ul>
@@ -72,6 +63,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 ### 2. Copyright
 
 **Threat:** An AI tool generates code derived from a copyleft-licensed project. Integrating this into a proprietary product can cause license contamination, legally requiring the company to open-source its code and creating IP risk.
+
+**Solutions:**
 
 <button class="collapsible"><strong> What is 'IP Indemnity' and does it cover legal costs?</strong></button>
 <div class="content">
@@ -105,7 +98,9 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 ### 3. Retention Period
 
-**Threat:** Proprietary code submitted to an AI service with a long data retention policy is stored on the provider's servers, creating a risk of intellectual property exposure in the event of a data breach.
+**Threat:** Proprietary code submitted to an AI service may be stored on the provider's servers, creating a risk of intellectual property exposure in the event of a data breach.
+
+**Solutions:**
 
 <button class="collapsible"><strong> How do I prevent long-term storage of my code on provider servers?</strong></button>
 <div class="content">
@@ -179,7 +174,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
 <ul>
-<li><strong>Supported exclusion patterns:</strong> Repository-level content exclusion with path patterns like "secrets.json", "secret*", "*.cfg", "/scripts/***"</li>
+<li><strong>Supported exclusion patterns:</strong> Repository-level content exclusion with path patterns like "<code>secrets.json</code>", "<code>secret*</code>", "<code>*.cfg</code>", "<code>/scripts/***</code>"</li>
 <li><strong>Credential confidentiality measures:</strong> User configurable settings for organization and enterprise-wide exclusions</li>
 </ul>
 
