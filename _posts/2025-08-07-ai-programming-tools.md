@@ -30,7 +30,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 **Threat:** AI assistant's model potentially collect and scan the code that contains hardcoded credentials even users do not include in the prompt. The secret is then used in the model's training data, creating a risk that an attacker could extract it via prompt injection, leading to a service breach.
 
-**Solutions:**
+**Q&A:**
 
 <button class="collapsible"><strong> Are `.gitignore` and `.env` files sufficient for protection?</strong></button>
 <div class="content">
@@ -64,7 +64,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 **Threat:** An AI tool generates code derived from a copyleft-licensed project. Integrating this into a proprietary product can cause license contamination, legally requiring the company to open-source its code and creating IP risk.
 
-**Solutions:**
+**Q&A:**
 
 <button class="collapsible"><strong> What is 'IP Indemnity' and does it cover legal costs?</strong></button>
 <div class="content">
@@ -100,7 +100,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 **Threat:** Proprietary code submitted to an AI service may be stored on the provider's servers, creating a risk of intellectual property exposure in the event of a data breach.
 
-**Solutions:**
+**Q&A:**
 
 <button class="collapsible"><strong> How do I prevent long-term storage of my code on provider servers?</strong></button>
 <div class="content">
