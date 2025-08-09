@@ -32,8 +32,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <button class="collapsible"><strong> Are `.gitignore` and `.env` files sufficient for protection?</strong></button>
 <div class="content">
-<p>No, these files only manage version control and do not stop an AI tool from reading an open file in your IDE.</p>
-</div>  
+  <p>No, these files only manage version control and do not stop an AI tool from reading an open file in your IDE.</p>
+  </div>  
 
 <button class="collapsible"><strong> What is the immediate action after submitting a secret?</strong></button>
 <div class="content">
@@ -149,7 +149,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
       <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="128">
     </div>
     <div style="float: left; margin-left: 15px;">
-      <div style="color: #666; font-size: 14px; margin-bottom: 5px;">Best AI coding assistant overall</div>
+      <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best AI coding assistant overall</div>
       <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://github.com/features/copilot" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">GitHub Copilot</a></div>
       <div style="color: #666; font-size: 14px;">IP indemnity with advanced exclusion patterns</div>
     </div>
@@ -208,7 +208,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <img src="https://images.indiehackers.com/post-images/UJu7H1MTEfYx0Yy871jV/tSHyRvzNLWPnx4sBYEdtWkmq4u93/cursor%20logo-words.jpg?w=700" width="128">
 </div>
 <div style="float: left; margin-left: 15px;">
-<div style="color: #666; font-size: 14px; margin-bottom: 5px;">Best privacy-focused AI coding assistant</div>
+<div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best privacy-focused AI coding assistant</div>
 <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://cursor.sh" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Cursor</a></div>
 <div style="color: #666; font-size: 14px;">Zero retention with privacy mode</div>
 </div>
@@ -268,7 +268,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <img src="https://miro.medium.com/v2/resize:fit:793/1*7P65v_3lCUd-sJynxQt_3Q.png" style="width: 100px;">
 </div>
 <div style="float: left; margin-left: 15px;">
-<div style="color: #666; font-size: 14px; margin-bottom: 5px;">Best enterprise AI coding assistant</div>
+<div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best enterprise AI coding assistant</div>
 <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://www.anthropic.com/product" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Claude Code</a></div>
 <div style="color: #666; font-size: 14px;">Enterprise-grade security with indemnity</div>
 </div>
@@ -328,7 +328,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <img src="https://exafunction.github.io/public/brand/windsurf-black-symbol.svg" alt="Windsurf logo" width="128">
 </div>
 <div style="float: left; margin-left: 15px;">
-<div style="color: #666; font-size: 14px; margin-bottom: 5px;">Best zero-data retention AI assistant</div>
+<div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best zero-data retention AI assistant</div>
 <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://windsurf.com" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Windsurf</a></div>
 <div style="color: #666; font-size: 14px;">Minutes to hours data deletion</div>
 </div>
@@ -386,7 +386,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <img src="https://logos-world.net/wp-content/uploads/2025/02/Google-Gemini-Logo.png" alt="Gemini CLI logo" width="128">
 </div>
 <div style="float: left; margin-left: 15px;">
-<div style="color: #666; font-size: 14px; margin-bottom: 5px;">Best credential-protected AI assistant</div>
+<div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best credential-protected AI assistant</div>
 <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://ai.google.dev/gemini" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Gemini CLI</a></div>
 <div style="color: #666; font-size: 14px;">Built-in credential protection</div>
 </div>
@@ -445,7 +445,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <img src="https://avatars.githubusercontent.com/u/108155640?s=280&v=4" alt="Augment Code logo" width="128">
 </div>
 <div style="float: left; margin-left: 15px;">
-<div style="color: #666; font-size: 14px; margin-bottom: 5px;">Best hybrid deployment AI assistant</div>
+<div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best hybrid deployment AI assistant</div>
 <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://www.augmentcode.com" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Augment Code</a></div>
 <div style="color: #666; font-size: 14px;">Remote and IDE-bound deployment options</div>
 </div>
@@ -504,7 +504,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <img src="https://images.seeklogo.com/logo-png/45/1/replit-logo-png_seeklogo-453823.png" alt="Replit logo" width="128">
 </div>
 <div style="float: left; margin-left: 15px;">
-<div style="color: #e74c3c; font-size: 14px; margin-bottom: 5px;">⚠️ HIGH RISK - Training enabled for all plans</div>
+<div style="color: #e74c3c; font-size: 24px; margin-bottom: 5px;">⚠️ HIGH RISK - Training enabled for all plans</div>
 <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://replit.com" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Replit</a></div>
 <div style="color: #e74c3c; font-size: 14px;">No credential protection or data retention policy</div>
 </div>
