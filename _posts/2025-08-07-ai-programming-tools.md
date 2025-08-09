@@ -138,7 +138,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ## Copilot -->
 
-<div style="background-color: #ffffff; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
   <div style="overflow: hidden;">
     <div style="float: left; margin-right: 15px;">
       <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="128">
@@ -197,7 +197,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
     
   <!-- ### Cursor -->
 
-<div style="background-color: #ffffff; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
 <img src="https://images.indiehackers.com/post-images/UJu7H1MTEfYx0Yy871jV/tSHyRvzNLWPnx4sBYEdtWkmq4u93/cursor%20logo-words.jpg?w=700" width="128">
@@ -256,7 +256,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Claude API (Anthropic) -->
 
-<div style="background-color: #ffffff; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
 
@@ -317,7 +317,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Windsurf -->
 
-<div style="background-color: #ffffff; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
 <img src="https://exafunction.github.io/public/brand/windsurf-black-symbol.svg" alt="Windsurf logo" width="128">
@@ -375,7 +375,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Gemini CLI -->
 
-<div style="background-color: #ffffff; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
 <img src="https://logos-world.net/wp-content/uploads/2025/02/Google-Gemini-Logo.png" alt="Gemini CLI logo" width="128">
@@ -434,7 +434,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Augment Code -->
 
-<div style="background-color: #ffffff; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
 <img src="https://avatars.githubusercontent.com/u/108155640?s=280&v=4" alt="Augment Code logo" width="128">
@@ -493,7 +493,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Replit -->
 
-<div style="background-color: #ffffff; padding: 16px; margin: 20px 0; border-radius: 4px;">
+<div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
 <img src="https://images.seeklogo.com/logo-png/45/1/replit-logo-png_seeklogo-453823.png" alt="Replit logo" width="128">
