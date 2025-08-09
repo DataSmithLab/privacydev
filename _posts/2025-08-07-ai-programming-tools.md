@@ -137,6 +137,9 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 
 <!-- ## Copilot -->
+<div></div>
+
+## Tools
 
 <div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
   <div style="overflow: hidden;">
@@ -260,7 +263,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
 
-<img src="https://miro.medium.com/v2/resize:fit:793/1*7P65v_3lCUd-sJynxQt_3Q.png" style="width: 100px;">
+<img src="https://miro.medium.com/v2/resize:fit:793/1*7P65v_3lCUd-sJynxQt_3Q.png" width="128">
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best enterprise AI coding assistant</div>
@@ -323,9 +326,9 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <img src="https://exafunction.github.io/public/brand/windsurf-black-symbol.svg" alt="Windsurf logo" width="128">
 </div>
 <div style="float: left; margin-left: 15px;">
-<div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best zero-data retention AI assistant</div>
+<div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best Free Tier AI assistant</div>
 <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://windsurf.com" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Windsurf</a></div>
-<div style="color: #666; font-size: 14px;">Minutes to hours data deletion</div>
+<div style="color: #666; font-size: 14px;">Zero Data Retention on Free Tier</div>
 </div>
 </div>
 
