@@ -7,7 +7,7 @@ cover: ai-tools.webp
 tags: [ai-programming]
 ---
 ## Our Goal
-We have thoroughly compared the dense privacy policies of today’s most popular AI programming to help you understand the critical privacy risks developers must be aware of.  For instance, violating Anthropic’s commertial terms can get your **API access revoked**—the exact scenario that [cut OpenAI off from Claude](https://www.wired.com/story/anthropic-revokes-openais-access-to-claude/). Meanwhile, Cursor's free tier uses your code for model training by default, as its **'zero-retention'** feature is opt-in. We provided a comparison matrix for [7 top tools below](#quick-comparison-which-tool-is-best), covering data retention, copyright assignment, and credential safety.
+We have thoroughly compared the dense privacy policies of today’s most popular AI programming to help you understand the critical privacy risks developers must be aware of.  For instance, violating Anthropic’s commercial terms can get your **API access revoked**—the exact scenario that [cut OpenAI off from Claude](https://www.wired.com/story/anthropic-revokes-openais-access-to-claude/). Meanwhile, Cursor's free tier uses your code for model training by default, as its **'zero-retention'** feature is opt-in. We provided a comparison matrix for [7 top tools below](#quick-comparison-which-tool-is-best), covering data retention, copyright assignment, and credential safety.
 
 ## Quick Comparison: Which Tool is Best?
 
