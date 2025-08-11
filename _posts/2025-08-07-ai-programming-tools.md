@@ -39,7 +39,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <button class="collapsible"><strong> How can I make an AI tool ignore specific files?</strong></button>
 <div class="content">
-<p>Use a configuration file like <code><a href="https://cloud.google.com/gemini/docs/codeassist/create-aiexclude-file" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">.aiexclude</a></code>, if available, to specify paths for the AI assistant to ignore.</p>
+<p>Use a configuration file like <code><a href="https://cloud.google.com/gemini/docs/codeassist/create-aiexclude-file" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">.aiexclude</a></code>, if available, to specify paths for the AI assistant to ignore.</p>
 </div>
 
 <div style="display: flex; margin-bottom: 20px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
@@ -148,7 +148,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
     </div>
     <div style="float: left; margin-left: 15px;">
       <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best AI coding assistant overall</div>
-      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://github.com/features/copilot" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">GitHub Copilot</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">GitHub Copilot</a></div>
       <div style="color: #666; font-size: 14px;">IP indemnity with advanced exclusion patterns</div>
     </div>
     </div>
@@ -157,9 +157,9 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <div class="content">
 
 <div style="margin-top: 15px; margin-bottom: 15px;">
-  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-copilot-business-privacy-statement">👁️ Privacy Policy</a> &nbsp;
-  <a href="https://docs.github.com/en/copilot">ℹ️ Documentation</a> &nbsp;
-  <a href="https://github.com/features/security">🔒 Security</a>
+  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-copilot-business-privacy-statement" target="_blank" rel="noopener noreferrer">👁️ Privacy Policy</a> &nbsp;
+  <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener noreferrer">ℹ️ Documentation</a> &nbsp;
+  <a href="https://github.com/features/security" target="_blank" rel="noopener noreferrer">🔒 Security</a>
 </div>
 
 <p><strong>Q: What is the retention period for different data types?</strong></p>
@@ -207,7 +207,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best privacy-focused AI coding assistant</div>
-<div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://cursor.sh" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Cursor</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://cursor.sh" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Cursor</a></div>
 <div style="color: #666; font-size: 14px;">Zero retention with privacy mode</div>
 </div>
 </div>
@@ -216,8 +216,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <div class="content">
 
 <div style="margin-top: 15px; margin-bottom: 15px;">
-<a href="https://cursor.sh/privacy">👁️ Privacy Policy</a> &nbsp;
-<a href="https://cursor.sh/docs">ℹ️ Documentation</a>
+<a href="https://cursor.sh/privacy" target="_blank" rel="noopener noreferrer">👁️ Privacy Policy</a> &nbsp;
+<a href="https://cursor.sh/docs" target="_blank" rel="noopener noreferrer">ℹ️ Documentation</a>
 </div>
 
 <p><strong>Q: What is the retention period for different data types?</strong></p>
@@ -267,7 +267,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best enterprise AI coding assistant</div>
-<div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://www.anthropic.com/product" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Claude Code</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://www.anthropic.com/product" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Claude Code</a></div>
 <div style="color: #666; font-size: 14px;">Enterprise-grade security with indemnity</div>
 </div>
 </div>
@@ -276,9 +276,9 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <div class="content">
 
 <div style="margin-top: 15px; margin-bottom: 15px;">
-<a href="https://www.anthropic.com/legal/privacy">👁️ Privacy Policy</a> &nbsp;
-<a href="https://docs.anthropic.com/claude/reference/getting-started-with-the-api">ℹ️ Documentation</a> &nbsp;
-<a href="https://www.anthropic.com/security">🔒 Trust & Safety</a>
+<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">👁️ Privacy Policy</a> &nbsp;
+<a href="https://docs.anthropic.com/claude/reference/getting-started-with-the-api" target="_blank" rel="noopener noreferrer">ℹ️ Documentation</a> &nbsp;
+<a href="https://www.anthropic.com/security" target="_blank" rel="noopener noreferrer">🔒 Trust & Safety</a>
 </div>
 
 <p><strong>Q: What is the retention period for different data types?</strong></p>
@@ -327,7 +327,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best Free Tier AI assistant</div>
-<div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://windsurf.com" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Windsurf</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://windsurf.com" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Windsurf</a></div>
 <div style="color: #666; font-size: 14px;">Zero Data Retention on Free Tier</div>
 </div>
 </div>
@@ -336,8 +336,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <div class="content">
 
 <div style="margin-top: 15px; margin-bottom: 15px;">
-<a href="https://windsurf.com/security">🔒 Security</a> &nbsp;
-<a href="https://windsurf.com/docs">ℹ️ Documentation</a>
+<a href="https://windsurf.com/security" target="_blank" rel="noopener noreferrer">🔒 Security</a> &nbsp;
+<a href="https://windsurf.com/docs" target="_blank" rel="noopener noreferrer">ℹ️ Documentation</a>
 </div>
 
 <p><strong>Q: What is the retention period for different data types?</strong></p>
@@ -385,7 +385,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best credential-protected AI assistant</div>
-<div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://ai.google.dev/gemini" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Gemini CLI</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://ai.google.dev/gemini" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Gemini CLI</a></div>
 <div style="color: #666; font-size: 14px;">Built-in credential protection</div>
 </div>
 </div>
@@ -394,8 +394,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <div class="content">
 
 <div style="margin-top: 15px; margin-bottom: 15px;">
-<a href="https://ai.google.dev/gemini/docs/privacy">👁️ Privacy</a> &nbsp;
-<a href="https://github.com/google-gemini/gemini-cli">💻 Source Code</a>
+<a href="https://ai.google.dev/gemini/docs/privacy" target="_blank" rel="noopener noreferrer">👁️ Privacy</a> &nbsp;
+<a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener noreferrer">💻 Source Code</a>
 </div>
 
 <p><strong>Q: What is the retention period for different data types?</strong></p>
@@ -444,7 +444,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best hybrid deployment AI assistant</div>
-<div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://www.augmentcode.com" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Augment Code</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://www.augmentcode.com" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Augment Code</a></div>
 <div style="color: #666; font-size: 14px;">Remote and IDE-bound deployment options</div>
 </div>
 </div>
@@ -453,8 +453,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <div class="content">
 
 <div style="margin-top: 15px; margin-bottom: 15px;">
-<a href="https://docs.augmentcode.com">ℹ️ Documentation</a> &nbsp;
-<a href="https://www.augmentcode.com/legal/privacy-policy">👁️ Privacy Policy</a>
+<a href="https://docs.augmentcode.com" target="_blank" rel="noopener noreferrer">ℹ️ Documentation</a> &nbsp;
+<a href="https://www.augmentcode.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">👁️ Privacy Policy</a>
 </div>
 
 <p><strong>Q: What is the retention period for different data types?</strong></p>
@@ -503,7 +503,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #e74c3c; font-size: 24px; margin-bottom: 5px;">⚠️ HIGH RISK - Training enabled for all plans</div>
-<div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://replit.com" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Replit</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://replit.com" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Replit</a></div>
 <div style="color: #e74c3c; font-size: 14px;">No credential protection or data retention policy</div>
 </div>
 </div>
@@ -512,8 +512,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 <div class="content">
 
 <div style="margin-top: 15px; margin-bottom: 15px;">
-<a href="https://replit.com/terms-of-service">📄 Terms of Service</a> &nbsp;
-<a href="https://docs.replit.com/legal-and-security-info">🔒 Security</a>
+<a href="https://replit.com/terms-of-service" target="_blank" rel="noopener noreferrer">📄 Terms of Service</a> &nbsp;
+<a href="https://docs.replit.com/legal-and-security-info" target="_blank" rel="noopener noreferrer">🔒 Security</a>
 </div>
 
 <p><strong>Q: What is the retention period for different data types?</strong></p>
