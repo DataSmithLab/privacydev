@@ -292,3 +292,9 @@ table ul, table ol {
   margin: 0;
   padding-left: 20px;
 }
+
+// Highlight classes
+.highlightred {
+  color: hsl(0, 65%, 35%);
+  font-weight: 600;
+}
