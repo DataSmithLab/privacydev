@@ -13,7 +13,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 | Criteria | [GitHub Copilot](#github-copilot) | [Cursor](#cursor) | [Claude Code](#claude-api-anthropic) | [Windsurf](#windsurf) | [Gemini CLI](#gemini-cli) | [Augment Code](#augment-code) | [Replit](#replit) |
 |---|---|---|---|---|---|---|---|
-| **Credential Protection** | <span class="pg-green">:white_check_mark: User configurable exclusion settings</span> | <span class="pg-orange">:warning: No credential monitoring</span> | <span class="pg-red">:x: No configurable exclusion settings</span> | <span class="pg-green">:white_check_mark: User configurable exclusion settings</span> | <span class="pg-green">:white_check_mark: Built-in exclusion settings</span> | <span class="pg-green">:white_check_mark: .augmentignore exclusion settings</span> | <span class="pg-red">:x: No configurable exclusion settings</span> |
+| **Credential Safety** | <span class="pg-green">:white_check_mark: User configurable exclusion settings</span> | <span class="pg-green">:white_check_mark: User configurable exclusion settings</span> | <span class="pg-red">:x: No configurable exclusion settings</span> | <span class="pg-green">:white_check_mark: User configurable exclusion settings</span> | <span class="pg-green">:white_check_mark: Built-in exclusion settings</span> | <span class="pg-green">:white_check_mark: .augmentignore exclusion settings</span> | <span class="pg-red">:x: No configurable exclusion settings</span> |
 | **IP Indemnity** | <span class="pg-green">:white_check_mark: With indemnity</span> | <span class="pg-red">:x: No indemnity</span> | <span class="pg-green">:white_check_mark: With indemnity</span> | <span class="pg-red">:x: No indemnity</span> | <span class="pg-green">:white_check_mark: With indemnity</span> | <span class="pg-red">:x: No indemnity</span> | <span class="pg-red">:x: No indemnity</span> |
 | **Retention Period (Free/Individual Plan)** | <span class="pg-orange">:warning: 28 days (IDE prompts) / 2 years (engagement data)</span> | <span class="pg-orange">:warning: Varies on Colection Purpose by default (privacy mode disable)</span> | <span class="pg-green">:white_check_mark: 30 days (default) / Zero (API)</span> | <span class="pg-orange">:warning: Default opt-in zero retention (individual)</span> | <span class="pg-orange">:warning: 18 months (individual) / Varies</span> | <span class="pg-red">:x: Indefinite retention</span> | <span class="pg-red">:x: No retention policy</span> |
 | **Retention Period (Paid Plan)** | <span class="pg-orange">:warning: 28 days (IDE prompts) / 2 years (engagement)</span> | <span class="pg-green">:white_check_mark: Zero retention by default (privacy mode enable)</span> | <span class="pg-green">:white_check_mark: 30 days (default) / Zero (API)</span> | <span class="pg-green">:white_check_mark: Zero retention (team/enterprise)</span> | <span class="pg-green">:white_check_mark: Zero Retention (Developer Paid API) </span> | <span class="pg-red">:x: Indefinite retention</span> | <span class="pg-red">:x: No retention policy</span> |
@@ -235,8 +235,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <p><strong>Q: How does credential protection work with exclusion settings?</strong></p>
 <ul>
-<li><strong>Supported exclusion patterns:</strong> No credential data monitoring on any model providers</li>
-<li><strong>Credential confidentiality measures:</strong> No Chinese infrastructure involvement, multi-factor authentication for AWS</li>
+<li><strong>Supported exclusion patterns:</strong> User configurable exclusion settings with .cursorignore file support</li>
+<li><strong>Credential confidentiality measures:</strong> .cursorignore file support for excluding sensitive files and directories from AI processing</li>
 </ul>
 
 <p><strong>Q: What deployment options are available?</strong></p>
@@ -267,7 +267,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best enterprise AI coding assistant</div>
-      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://www.anthropic.com/product" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Claude Code</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Claude Code</a></div>
 <div style="color: #666; font-size: 14px;">Enterprise-grade security with indemnity</div>
 </div>
 </div>
@@ -385,7 +385,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 </div>
 <div style="float: left; margin-left: 15px;">
 <div style="color: #666; font-size: 24px; margin-bottom: 5px;">Best credential-protected AI assistant</div>
-      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://ai.google.dev/gemini" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Gemini CLI</a></div>
+      <div style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 5px;"><a href="https://cloud.google.com/gemini/docs/codeassist/gemini-cli" target="_blank" rel="noopener noreferrer" style="color: #333; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#333'">Gemini CLI</a></div>
 <div style="color: #666; font-size: 14px;">Built-in credential protection</div>
 </div>
 </div>
@@ -553,4 +553,4 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <hr style="border: 1px dashed #ccc; margin: 30px 0;">
 
-**Please note we are not affiliated with any of the providers we recommend.** We evaluate tools based on the five key dimensions that matter most to developers. 
+**Please note we are not affiliated with any of the providers we recommend.** We evaluate tools based on the key dimensions that matter most to developers. 
