@@ -1,4 +1,4 @@
-# Good Privacy by Developers
+# The Developers' Guide for Privacy and Security
 
 ## About
 

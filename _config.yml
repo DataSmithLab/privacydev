@@ -1,7 +1,7 @@
 # Mandatory settings
 
 blog_theme: light # Or use dark
-name: Good Privacy by Developers
+name: The Developers' Guide for Privacy and Security
 paginate: 25
 url: http://privacydev.org/
 
