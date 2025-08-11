@@ -141,6 +141,8 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 ## Tools
 
+<div id="github-copilot">
+
 <div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
   <div style="overflow: hidden;">
     <div style="float: left; margin-right: 15px;">
@@ -200,6 +202,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
     
   <!-- ### Cursor -->
 
+<div id="cursor">
 <div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
@@ -259,6 +262,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Claude API (Anthropic) -->
 
+<div id="claude-api-anthropic">
 <div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
@@ -320,6 +324,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Windsurf -->
 
+<div id="windsurf">
 <div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
@@ -378,6 +383,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Gemini CLI -->
 
+<div id="gemini-cli">
 <div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
@@ -437,6 +443,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Augment Code -->
 
+<div id="augment-code">
 <div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
@@ -496,6 +503,7 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <!-- ### Replit -->
 
+<div id="replit">
 <div style="background-color: #ffffff; padding: 10px; margin: 10px 0; border-radius: 4px;">
 <div style="overflow: hidden;">
 <div style="float: left; margin-right: 15px;">
