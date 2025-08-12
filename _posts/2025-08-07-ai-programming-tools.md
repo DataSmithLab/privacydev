@@ -561,4 +561,4 @@ We have thoroughly compared the dense privacy policies of today’s most popular
 
 <hr style="border: 1px dashed #ccc; margin: 30px 0;">
 
-**Please note we are not affiliated with any of the providers we recommend.** We evaluate tools based on the key dimensions that matter most to developers. 
+<i>Please note we are not affiliated with any of the providers we recommend.</i> We evaluate tools based on the key dimensions that matter most to developers. 
